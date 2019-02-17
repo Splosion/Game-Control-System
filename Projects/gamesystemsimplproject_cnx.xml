@@ -1,0 +1,482 @@
+<?xml version='1.0'?>
+<?xml-stylesheet type="text/xsl " href=" C:\Crestron\Simpl\ConnectionSheet.xsl "?> 
+<connectionSheet>
+<systemName>Game System</systemName>
+<designer>Chris R</designer>
+<dealer>Splosion</dealer>
+<jobNumber>01</jobNumber>
+<created>08/17/06 - 08:52:45 PM</created>
+<modified>08/24/06 - 04:43:19 PM</modified>
+<appPath>C:\Crestron\Simpl\</appPath>
+<device type="controlSystem">
+<model>PRO2</model>
+<device>
+ <address prefix = "Slot" >04</address>
+<name>C2I-COM6</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>C2I-COM6</model>
+<location></location>
+<device>
+ <address prefix = "Port" >A</address>
+<name>Crosspoint 12x8</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>C2 COM Two-way serial driver</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >B</address>
+<name>Crosspoint 8x4</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>C2 COM Two-way serial driver</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >C</address>
+<name>RGB 202 Rxi - OSSC</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>C2 COM Two-way serial driver</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >D</address>
+<name>RGB 202 Rxi BVM</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>C2 COM Two-way serial driver</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >E</address>
+<name>Sony BVM-20F1E (RS-485)</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>C2 COM Two-way serial driver</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >F</address>
+<name>C2 COM Two-way serial driver</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>C2 COM Two-way serial driver</model>
+<location></location>
+</device>
+</device>
+<device>
+ <address prefix = "Slot" >05</address>
+<name>C2I-IR8</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>C2I-IR8</model>
+<location></location>
+<device>
+ <address prefix = "Port" >A</address>
+<name>ExcelVan HDMI 4x2 Matrix</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>HDMI 4x2 Matrix</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >B</address>
+<name>ExcelVan 6x2 HDMI Matrix</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>6x2 HDMI Matrix</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >C</address>
+<name>Marqs OSSC</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>OSSC</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >D</address>
+<name>Edifier R1700BT</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>R1700BT</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >E</address>
+<name>Panasonic TX-58DX902B</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>TX-58DX902B</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >F</address>
+<name>Samsung UE49K5100</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>UE49K5100</model>
+<location></location>
+</device>
+</device>
+<device>
+ <address prefix = "Slot" >06</address>
+<name>C2I-IO8</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>C2I-IO8</model>
+<location></location>
+<device>
+ <address prefix = "Port" >01</address>
+<name>DIO-Port</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>DIO-Port</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >02</address>
+<name>DIO-Port</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>DIO-Port</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >03</address>
+<name>DIO-Port</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>DIO-Port</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >04</address>
+<name>DIO-Port</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>DIO-Port</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >05</address>
+<name>DIO-Port</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>DIO-Port</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >06</address>
+<name>DIO-Port</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>DIO-Port</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >07</address>
+<name>DIO-Port</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>DIO-Port</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >08</address>
+<name>DIO-Port</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>DIO-Port</model>
+<location></location>
+</device>
+</device>
+<device>
+ <address prefix = "Slot" >07</address>
+<name>C2I-RY8</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>C2I-RY8</model>
+<location></location>
+<device>
+ <address prefix = "Port" >01</address>
+<name>Relay</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>Relay</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >02</address>
+<name>Relay</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>Relay</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >03</address>
+<name>Relay</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>Relay</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >04</address>
+<name>Relay</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>Relay</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >05</address>
+<name>Relay</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>Relay</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >06</address>
+<name>Relay</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>Relay</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >07</address>
+<name>Relay</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>Relay</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Port" >08</address>
+<name>Relay</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>Relay</model>
+<location></location>
+</device>
+</device>
+<device>
+ <address prefix = "Slot" >08</address>
+<name>C2ENET-1</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>C2ENET-1</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "Slot" >09</address>
+<name>C2Net-Device</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>C2Net-Device</model>
+<location></location>
+<device>
+ <address prefix = "ID" >A4</address>
+<name>CNRFGWA-418</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>CNRFGWA-418</model>
+<location></location>
+<device>
+ <address prefix = "RFID" >10</address>
+<name>MT-1000C (RF)</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>MT-1000C (RF)</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "RFID" >11</address>
+<name>BLOCKED</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>BLOCKED</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "RFID" >12</address>
+<name>BLOCKED</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>BLOCKED</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "RFID" >13</address>
+<name>BLOCKED</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>BLOCKED</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "RFID" >14</address>
+<name>BLOCKED</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>BLOCKED</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "RFID" >15</address>
+<name>BLOCKED</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>BLOCKED</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "RFID" >16</address>
+<name>BLOCKED</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>BLOCKED</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "RFID" >17</address>
+<name>BLOCKED</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>BLOCKED</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "RFID" >18</address>
+<name>BLOCKED</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>BLOCKED</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "RFID" >19</address>
+<name>BLOCKED</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>BLOCKED</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "RFID" >1A</address>
+<name>BLOCKED</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>BLOCKED</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "RFID" >1B</address>
+<name>BLOCKED</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>BLOCKED</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "RFID" >1C</address>
+<name>BLOCKED</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>BLOCKED</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "RFID" >1D</address>
+<name>BLOCKED</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>BLOCKED</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "RFID" >1E</address>
+<name>BLOCKED</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>BLOCKED</model>
+<location></location>
+</device>
+<device>
+ <address prefix = "RFID" >1F</address>
+<name>BLOCKED</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>BLOCKED</model>
+<location></location>
+</device>
+</device>
+</device>
+<device>
+ <address prefix = "Slot" >10</address>
+<name>C2I-PRO2-LCDPANEL</name>
+<function></function>
+<equipment></equipment>
+<notes></notes>
+<model>C2I-PRO2-LCDPANEL</model>
+<location></location>
+</device>
+</device>
+</connectionSheet>
