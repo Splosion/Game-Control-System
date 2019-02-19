@@ -1,7 +1,7 @@
 ### Crestron Touchpanel Plans:
 
 
-Selector
+Start Page
 
 * TV Choice
 * Controls (Volume, etc)
