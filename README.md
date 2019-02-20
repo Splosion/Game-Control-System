@@ -38,7 +38,8 @@ Example Workflow
 * Set/Reset Latch to turn button into switch
 
 ##### TO DO:
-
+ 
+* Re-capture OSSC missing buttons #8 and Sampling Phase -/+
 * Finish discreet Device control screens on touchpanel
    * OSSC
    * Top TV
