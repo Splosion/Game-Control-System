@@ -1,0 +1,15 @@
+#SYMBOL_NAME "Extron Switching"
+#CATEGORY "32" //Miscellaneous
+
+DIGITAL_INPUT Enable;
+STRING_INPUT type[1];
+ANALOG_INPUT source_for_output[8];
+STRING_OUTPUT Extron_TX$;
+
+CHANGE source_for_output
+{
+INTEGER i;
+i=GETLASTMODIFIEDARRAYINDEX();
+If(Enable)
+Extron_TX$ = ITOA(source_for_output[i]) + "*" + ITOA(i) + type;
+}

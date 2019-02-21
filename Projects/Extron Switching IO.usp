@@ -1,0 +1,38 @@
+#SYMBOL_NAME "Extron Switcher"
+#CATEGORY "32" //Miscellaneous
+
+DIGITAL_INPUT Enable;
+STRING_INPUT type[1];
+ANALOG_INPUT input;
+ANALOG_INPUT output;
+STRING_OUTPUT Extron_TX$;
+
+INTEGER in;
+INTEGER out;
+STRING typeString[1];
+CHANGE input
+{
+in = input;
+If(Enable && out > 0)
+{
+Extron_TX$ = ItoA(in) + "*" + ItoA(out) + typeString;
+in=0;
+}
+}
+CHANGE output
+{
+out = output;
+If(Enable && in > 0)
+{
+Extron_TX$ = ItoA(in) + "*" + ItoA(out) + typeString;
+out=0;
+}
+}
+CHANGE type
+{
+typeString = type;
+}
+CHANGE Enable
+{
+typeString = "!";
+}
