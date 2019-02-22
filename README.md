@@ -41,10 +41,11 @@ Example Workflow
  
 * Re-capture OSSC missing buttons #8 and Sampling Phase -/+
 * Finish discreet Device control screens on touchpanel
-   * OSSC
+   * OSSC - Almost Done
    * Top TV
    * Bottom TV
-   * BVM?
+   * BVM? (Requires testing of below)
+   * Extron Matrix Switchers (Almost got switching functionality working)
 * Touchpanel Icons
    * Power
    * Back
@@ -53,4 +54,6 @@ Example Workflow
 * Investigate BVM Control via RS485
 * If Above doesn't work, Investigate "Parallel" control port 2 on BVM for control
 * Maybe Updated VTPro/SIMPL? (Consider Calling support and pretending to be a tech dept for some company) This will enable other two-way touchpanels, enabling additional (maybe simpler) logic.
+* Investigate avoiding clashes
+* Tidy up signals that don't go anywhere
 * Any Additional functionality?
