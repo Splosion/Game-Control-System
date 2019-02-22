@@ -14,208 +14,218 @@ Linker script and memory map
                 0x00000000                PROVIDE (software_init_hook, 0x0)
                 0x00000000                PROVIDE (_software_init_hook, 0x0)
 
-.text           0x80000000     0x44c0
+.text           0x80000000     0x4e60
  *(.text)
  .text          0x80000000      0x192 S2_Extron_Switching_Input.o
                 0x80000000                S2_Extron_Switching_Input_main
                 0x800000fc                S2_Extron_Switching_InputEventHandler00000
                 0x8000005a                S2_Extron_Switching_Input_EventHandler
  *fill*         0x80000192        0x2
- .text          0x80000194      0x7dc S2_Extron_Switching_IO.o
-                0x80000778                S2_Extron_Switching_IOEventHandler00002
-                0x80000620                S2_Extron_Switching_IO_EventHandler
-                0x800003da                S2_Extron_Switching_IOEventHandler00001
-                0x800006ee                S2_Extron_Switching_IO_main
+ .text          0x80000194      0x888 S2_Extron_Switching_IO.o
+                0x800007f4                S2_Extron_Switching_IOEventHandler00002
+                0x8000069c                S2_Extron_Switching_IO_EventHandler
+                0x80000418                S2_Extron_Switching_IOEventHandler00001
+                0x8000076a                S2_Extron_Switching_IO_main
                 0x80000194                S2_Extron_Switching_IOEventHandler00000
-                0x8000083e                S2_Extron_Switching_IOEventHandler00003
- .text          0x80000970     0x305a library.o
-                0x800029b8                RotateRightLong
-                0x80002eb8                IsSystem
-                0x80002930                Seed
-                0x80000f26                Remove
-                0x800025e8                Ltoa
-                0x800023c8                Atoi
-                0x80002ca2                Right
-                0x8000286a                Mod
-                0x80002ab4                Getc
-                0x800027ac                SMuldiv
-                0x80002e9e                IsHidden
-                0x800026a6                Min
-                0x800038a0                hextosi
-                0x80003042                WriteIntegerArray
-                0x80003580                GetSignedIntArrayElementPtr
-                0x800021ec                CheckStructArray
-                0x800038b2                hextosl
-                0x8000317e                WriteSignedIntegerArray
-                0x80001fce                InitStringParamArray
-                0x800017c2                ReadSignedLongIntegerArray
-                0x80000bf8                GatherToDelimiter
-                0x80001f3c                InitStringArray
-                0x80002684                Max
-                0x80002eec                IsReadOnly
-                0x8000277c                SMax
-                0x80000dda                GatherByLength
-                0x80002540                Chr
-                0x8000301a                ReadSignedLongInteger
-                0x800025a4                Itohex
-                0x8000218a                GetStructArrayElement
-                0x80002c76                ReverseFindi
-                0x80001a82                ReadStringArray
-                0x800033fc                GetIntArrayElementPtr
-                0x80002b80                Lower
-                0x8000294a                RotateLeft
-                0x80001ce4                CheckInputArray
-                0x800024ea                Atosl
-                0x800023a0                High
-                0x80002904                Rnd
-                0x80002832                UMod
-                0x80002994                RotateLeftLong
-                0x80003992                FindNumericChar
-                0x80002794                SMin
-                0x80002b0c                Left
-                0x80002fce                ReadSignedInteger
-                0x800023be                LowWord
-                0x80002296                Bit
-                0x80002f7a                ReadLongInteger
-                0x8000232c                Byte
-                0x800034be                GetLongArrayElementPtr
-                0x80002c48                ReverseFind
-                0x80002b6c                Len
-                0x800026c8                Divide
-                0x80002488                Atol
-                0x80003704                CheckIOArrayBounds
-                0x80001d38                CheckStringInputArray
-                0x8000321c                WriteSignedLongIntegerArray
-                0x80002108                GetStringArrayElement
-                0x80002628                Ltohex
-                0x80002560                Itoa
-                0x8000296e                RotateRight
-                0x8000119e                InternalReverseFind
-                0x80002f56                WriteLongInteger
-                0x80001e40                SetStringArray
-                0x80001626                ReadSignedIntegerArray
-                0x80002e64                InitIntArray
-                0x80001d8c                SetOutputArray
-                0x80002f02                WriteInteger
-                0x80002d04                SetString
-                0x800028a2                Random
-                0x80002fa2                WriteSignedInteger
-                0x800029e6                Find
-                0x80002bdc                Mid
-                0x80003642                GetSignedLongArrayElementPtr
-                0x800038c2                hextol
-                0x80003322                ReadString
-                0x80003970                UpperChar
-                0x80002430                Atosi
-                0x80002f2e                ReadInteger
-                0x80002734                Muldiv
-                0x80001df6                SetStringOutputArray
-                0x800032ba                WriteString
-                0x80001cb2                InitInOutArray
-                0x80002050                InitNvramStringArray
-                0x80002668                Abs
-                0x800027f4                SDivide
-                0x800012ee                ReadIntegerArray
-                0x80000970                CompareStrings
-                0x8000394e                LowerChar
-                0x800029da                ClearBuffer
-                0x80002db8                Upper
-                0x800020e8                InitStructArray
-                0x80002e14                MakeLower
-                0x80002ed2                IsVolume
-                0x80001070                RemoveByLength
-                0x80002234                CheckStringOutputArrayIndex
-                0x800030e0                WriteLongIntegerArray
-                0x800037b8                InitRampInfoStructArray
-                0x800023b4                HighWord
-                0x80002e84                IsDirectory
-                0x8000148a                ReadLongIntegerArray
-                0x800023aa                Low
-                0x80000a2c                Gather
-                0x80002e3c                MakeUpper
-                0x80001ebe                InitStringStruct
-                0x80002706                CheckDenominator
-                0x8000388a                hextoi
-                0x8000195e                WriteStringArray
-                0x80003766                InitializeRampInfo
-                0x80002ff6                WriteSignedLongInteger
-                0x80001ef8                InitNvramStringStruct
- *fill*         0x800039ca        0x6
-                0x800039d0                .=ALIGN(0x10)
+                0x800008ea                S2_Extron_Switching_IOEventHandler00003
+ .text          0x80000a1c      0x64e S2_Extron_Gain_Volume.o
+                0x80000fb8                S2_Extron_Gain_Volume_main
+                0x80000ff8                S2_Extron_Gain_VolumeEventHandler00000
+                0x8000103a                S2_Extron_Gain_VolumeEventHandler00003
+                0x80000a1c                S2_Extron_Gain_VolumeEventHandler00001
+                0x80000ee4                S2_Extron_Gain_Volume_EventHandler
+                0x80000c80                S2_Extron_Gain_VolumeEventHandler00002
+ *fill*         0x8000106a        0x2
+ .text          0x8000106c     0x305a library.o
+                0x800030b4                RotateRightLong
+                0x800035b4                IsSystem
+                0x8000302c                Seed
+                0x80001622                Remove
+                0x80002ce4                Ltoa
+                0x80002ac4                Atoi
+                0x8000339e                Right
+                0x80002f66                Mod
+                0x800031b0                Getc
+                0x80002ea8                SMuldiv
+                0x8000359a                IsHidden
+                0x80002da2                Min
+                0x80003f9c                hextosi
+                0x8000373e                WriteIntegerArray
+                0x80003c7c                GetSignedIntArrayElementPtr
+                0x800028e8                CheckStructArray
+                0x80003fae                hextosl
+                0x8000387a                WriteSignedIntegerArray
+                0x800026ca                InitStringParamArray
+                0x80001ebe                ReadSignedLongIntegerArray
+                0x800012f4                GatherToDelimiter
+                0x80002638                InitStringArray
+                0x80002d80                Max
+                0x800035e8                IsReadOnly
+                0x80002e78                SMax
+                0x800014d6                GatherByLength
+                0x80002c3c                Chr
+                0x80003716                ReadSignedLongInteger
+                0x80002ca0                Itohex
+                0x80002886                GetStructArrayElement
+                0x80003372                ReverseFindi
+                0x8000217e                ReadStringArray
+                0x80003af8                GetIntArrayElementPtr
+                0x8000327c                Lower
+                0x80003046                RotateLeft
+                0x800023e0                CheckInputArray
+                0x80002be6                Atosl
+                0x80002a9c                High
+                0x80003000                Rnd
+                0x80002f2e                UMod
+                0x80003090                RotateLeftLong
+                0x8000408e                FindNumericChar
+                0x80002e90                SMin
+                0x80003208                Left
+                0x800036ca                ReadSignedInteger
+                0x80002aba                LowWord
+                0x80002992                Bit
+                0x80003676                ReadLongInteger
+                0x80002a28                Byte
+                0x80003bba                GetLongArrayElementPtr
+                0x80003344                ReverseFind
+                0x80003268                Len
+                0x80002dc4                Divide
+                0x80002b84                Atol
+                0x80003e00                CheckIOArrayBounds
+                0x80002434                CheckStringInputArray
+                0x80003918                WriteSignedLongIntegerArray
+                0x80002804                GetStringArrayElement
+                0x80002d24                Ltohex
+                0x80002c5c                Itoa
+                0x8000306a                RotateRight
+                0x8000189a                InternalReverseFind
+                0x80003652                WriteLongInteger
+                0x8000253c                SetStringArray
+                0x80001d22                ReadSignedIntegerArray
+                0x80003560                InitIntArray
+                0x80002488                SetOutputArray
+                0x800035fe                WriteInteger
+                0x80003400                SetString
+                0x80002f9e                Random
+                0x8000369e                WriteSignedInteger
+                0x800030e2                Find
+                0x800032d8                Mid
+                0x80003d3e                GetSignedLongArrayElementPtr
+                0x80003fbe                hextol
+                0x80003a1e                ReadString
+                0x8000406c                UpperChar
+                0x80002b2c                Atosi
+                0x8000362a                ReadInteger
+                0x80002e30                Muldiv
+                0x800024f2                SetStringOutputArray
+                0x800039b6                WriteString
+                0x800023ae                InitInOutArray
+                0x8000274c                InitNvramStringArray
+                0x80002d64                Abs
+                0x80002ef0                SDivide
+                0x800019ea                ReadIntegerArray
+                0x8000106c                CompareStrings
+                0x8000404a                LowerChar
+                0x800030d6                ClearBuffer
+                0x800034b4                Upper
+                0x800027e4                InitStructArray
+                0x80003510                MakeLower
+                0x800035ce                IsVolume
+                0x8000176c                RemoveByLength
+                0x80002930                CheckStringOutputArrayIndex
+                0x800037dc                WriteLongIntegerArray
+                0x80003eb4                InitRampInfoStructArray
+                0x80002ab0                HighWord
+                0x80003580                IsDirectory
+                0x80001b86                ReadLongIntegerArray
+                0x80002aa6                Low
+                0x80001128                Gather
+                0x80003538                MakeUpper
+                0x800025ba                InitStringStruct
+                0x80002e02                CheckDenominator
+                0x80003f86                hextoi
+                0x8000205a                WriteStringArray
+                0x80003e62                InitializeRampInfo
+                0x800036f2                WriteSignedLongInteger
+                0x800025f4                InitNvramStringStruct
+ *fill*         0x800040c6        0xa
+                0x800040d0                .=ALIGN(0x10)
  *(.eh_frame)
-                0x800039d0                .=ALIGN(0x10)
+                0x800040d0                .=ALIGN(0x10)
  *(.gnu.linkonce.t.*)
-                0x800039d0                .=ALIGN(0x4)
-                0x800039d0                __CTOR_LIST__=.
-                0x800039d0                ___CTOR_LIST__=.
-                0x800039d0        0x4 LONG 0x0 (((__CTOR_END__-__CTOR_LIST__)/0x4)-0x2)
+                0x800040d0                .=ALIGN(0x4)
+                0x800040d0                __CTOR_LIST__=.
+                0x800040d0                ___CTOR_LIST__=.
+                0x800040d0        0x4 LONG 0x0 (((__CTOR_END__-__CTOR_LIST__)/0x4)-0x2)
  *(.ctors)
-                0x800039d4        0x4 LONG 0x0
-                0x800039d8                __CTOR_END__=.
-                0x800039d8                __DTOR_LIST__=.
-                0x800039d8                ___DTOR_LIST__=.
-                0x800039d8        0x4 LONG 0x0 (((__DTOR_END__-__DTOR_LIST__)/0x4)-0x2)
+                0x800040d4        0x4 LONG 0x0
+                0x800040d8                __CTOR_END__=.
+                0x800040d8                __DTOR_LIST__=.
+                0x800040d8                ___DTOR_LIST__=.
+                0x800040d8        0x4 LONG 0x0 (((__DTOR_END__-__DTOR_LIST__)/0x4)-0x2)
  *(.dtors)
-                0x800039dc        0x4 LONG 0x0
-                0x800039e0                __DTOR_END__=.
+                0x800040dc        0x4 LONG 0x0
+                0x800040e0                __DTOR_END__=.
  *(.rodata)
- .rodata        0x800039e0      0x21a S2_Extron_Switching_Input.o
- .rodata        0x80003bfa      0x2a0 S2_Extron_Switching_IO.o
- .rodata        0x80003e9a      0x611 library.o
+ .rodata        0x800040e0      0x21a S2_Extron_Switching_Input.o
+ .rodata        0x800042fa      0x2a0 S2_Extron_Switching_IO.o
+ .rodata        0x8000459a      0x299 S2_Extron_Gain_Volume.o
+ .rodata        0x80004833      0x611 library.o
  *(.gcc_except_table)
- *fill*         0x800044ab        0x1
-                0x800044ac                .=ALIGN(0x2)
-                0x800044ac                __INIT_SECTION__=.
-                0x800044ac        0x4 LONG 0x4e560000
+                0x80004e44                .=ALIGN(0x2)
+                0x80004e44                __INIT_SECTION__=.
+                0x80004e44        0x4 LONG 0x4e560000
  *(.init)
-                0x800044b0        0x2 SHORT 0x4e5e
-                0x800044b2        0x2 SHORT 0x4e75
-                0x800044b4                __FINI_SECTION__=.
-                0x800044b4        0x4 LONG 0x4e560000
+                0x80004e48        0x2 SHORT 0x4e5e
+                0x80004e4a        0x2 SHORT 0x4e75
+                0x80004e4c                __FINI_SECTION__=.
+                0x80004e4c        0x4 LONG 0x4e560000
  *(.fini)
-                0x800044b8        0x2 SHORT 0x4e5e
-                0x800044ba        0x2 SHORT 0x4e75
+                0x80004e50        0x2 SHORT 0x4e5e
+                0x80004e52        0x2 SHORT 0x4e75
  *(.lit)
- *fill*         0x800044bc        0x4
-                0x800044c0                .=ALIGN(0x10)
-                0x800044c0                _etext=.
-                0x800044c0                etext=.
+ *fill*         0x80004e54        0xc
+                0x80004e60                .=ALIGN(0x10)
+                0x80004e60                _etext=.
+                0x80004e60                etext=.
 
-.data           0x800044c0        0x0
-                0x800044c0                copy_start=.
+.data           0x80004e60        0x0
+                0x80004e60                copy_start=.
  *(.shdata)
  *(.data)
  *(.gnu.linkonce.d.*)
-                0x800044c0                .=ALIGN(0x10)
-                0x800044c0                _edata=.
-                0x800044c0                copy_end=.
+                0x80004e60                .=ALIGN(0x10)
+                0x80004e60                _edata=.
+                0x80004e60                copy_end=.
 
 .got
  *(.got.plt)
  *(.got)
 
-EntryList       0x800044c0      0x220
+EntryList       0x80004e60      0x330
  *(EntryList)
- EntryList      0x800044c0      0x110 S2_Extron_Switching_Input.o
-                0x800044c0                S2_Extron_Switching_Input_Entry
- EntryList      0x800045d0      0x110 S2_Extron_Switching_IO.o
-                0x800045d0                S2_Extron_Switching_IO_Entry
-                0x800046e0                .=ALIGN(0x4)
+ EntryList      0x80004e60      0x110 S2_Extron_Switching_Input.o
+                0x80004e60                S2_Extron_Switching_Input_Entry
+ EntryList      0x80004f70      0x110 S2_Extron_Switching_IO.o
+                0x80004f70                S2_Extron_Switching_IO_Entry
+ EntryList      0x80005080      0x110 S2_Extron_Gain_Volume.o
+                0x80005080                S2_Extron_Gain_Volume_Entry
+                0x80005190                .=ALIGN(0x4)
 
-FunctionList    0x800046e0        0x4
+FunctionList    0x80005190        0x4
  *(FunctionList)
- FunctionList   0x800046e0        0x4 globals.o
-                0x800046e0                g_pFunctions
-                0x800046e4                .=ALIGN(0x4)
+ FunctionList   0x80005190        0x4 globals.o
+                0x80005190                g_pFunctions
+                0x80005194                .=ALIGN(0x4)
 
-.bss            0x800046e4        0x0
-                0x800046e4                .=ALIGN(0x4)
-                0x800046e4                __bss_start=.
+.bss            0x80005194        0x0
+                0x80005194                .=ALIGN(0x4)
+                0x80005194                __bss_start=.
  *(.shbss)
  *(.bss)
  *(COMMON)
-                0x800046e8                _end=ALIGN(0x8)
-                0x800046e8                __end=_end
+                0x80005198                _end=ALIGN(0x8)
+                0x80005198                __end=_end
 
 .stab
  *(.stab)
@@ -266,4 +276,18 @@ FunctionList    0x800046e0        0x4
  *(.debug_weaknames)
 
 .debug_funcnames
- *(.debug
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+LOAD S2_Extron_Switching_Input.o
+LOAD S2_Extron_Switching_IO.o
+LOAD S2_Extron_Gain_Volume.o
+LOAD globals.o
+LOAD library.o
+OUTPUT(_S2_GameSystemSIMPLProject.spl elf32-m68k)
+
+.comment        0x80005194       0xbe

@@ -49,8 +49,11 @@ Example Workflow
    * Power
    * Back
    * Home
+   * Transport Buttons
+   * Left/Right for transitions
    * Backlight (OSSC)
 * Investigate BVM Control via RS485
 * If Above doesn't work, Investigate "Parallel" control port 2 on BVM for control
 * Maybe Updated VTPro/SIMPL? (Consider Calling support and pretending to be a tech dept for some company) This will enable other two-way touchpanels, enabling additional (maybe simpler) logic.
+* General Volume Control settings (Home button activates an enable that sets vol/channel button pairs to control volume on each tv
 * Any Additional functionality?

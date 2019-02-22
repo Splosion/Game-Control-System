@@ -8,31 +8,38 @@ ANALOG_INPUT output;
 STRING_OUTPUT Extron_TX$;
 
 INTEGER in;
+INTEGER prev_in;
 INTEGER out;
+INTEGER prev_out;
 STRING typeString[1];
 CHANGE input
 {
 in = input;
-If(Enable && out > 0)
+If(Enable && out > 0 && in != prev_in && in <=32)
 {
 Extron_TX$ = ItoA(in) + "*" + ItoA(out) + typeString;
+prev_in=in;
 in=0;
 }
 }
 CHANGE output
 {
 out = output;
-If(Enable && in > 0)
+If(Enable && in > 0 && out != prev_out&& out <=32)
 {
 Extron_TX$ = ItoA(in) + "*" + ItoA(out) + typeString;
+prev_out=out;
 out=0;
 }
 }
 CHANGE type
 {
 typeString = type;
+prev_in=0;
+prev_out=0;
 }
 CHANGE Enable
 {
 typeString = "!";
+
 }

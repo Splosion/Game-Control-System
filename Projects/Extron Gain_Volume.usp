@@ -1,0 +1,49 @@
+#SYMBOL_NAME "Extron Gain/Volume"
+#CATEGORY "32" //Miscellaneous
+
+DIGITAL_INPUT Enable;
+DIGITAL_INPUT isInput;
+ANALOG_INPUT IO;
+DIGITAL_INPUT up;
+DIGITAL_INPUT down;
+STRING_OUTPUT Extron_TX$;
+          
+INTEGER input;
+          
+CHANGE IO
+{
+	input = IO;
+}
+PUSH up
+{
+	if(Enable && input > 0)
+	{		
+		if(isInput)
+		{
+			Extron_TX$ = ItoA(input) + "+G";
+		}
+		else
+		{
+			Extron_TX$ = ItoA(input) + "+V";
+		}
+	}
+}
+PUSH down
+{
+	if(Enable && input > 0)
+	{		
+		if(isInput)
+		{
+			Extron_TX$ = ItoA(input) + "-G";
+		}
+		else
+		{
+			Extron_TX$ = ItoA(input) + "-V";
+		}
+	}
+}
+
+CHANGE Enable
+{
+	input=0;
+}

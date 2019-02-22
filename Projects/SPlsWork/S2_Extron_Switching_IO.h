@@ -109,7 +109,9 @@ START_NVRAM_VAR_STRUCT( S2_Extron_Switching_IO )
 {
    DECLARE_STRING_STRUCT( S2_Extron_Switching_IO, __TYPESTRING );
    unsigned short __IN;
+   unsigned short __PREV_IN;
    unsigned short __OUT;
+   unsigned short __PREV_OUT;
 };
 
 
