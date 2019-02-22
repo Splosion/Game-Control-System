@@ -16,7 +16,6 @@ If a Display is chosen:
 	* N64 JP
 	* Gamecube
 	* Wii
-
 * Sony
 * Sega
 * Microsoft(?)
