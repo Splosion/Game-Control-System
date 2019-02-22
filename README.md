@@ -6,7 +6,7 @@ Start Page
 * TV Choice
 * Controls (Volume, etc)
 	- All (useful) controls for any individual device are in a page dedicated to that device.
-	
+
 If a Display is chosen:
 
 * Nintendo
@@ -16,13 +16,12 @@ If a Display is chosen:
 	* N64 JP
 	* Gamecube
 	* Wii
-
 * Sony
 * Sega
 * Microsoft(?)
 * Misc
 * MicroConsoles
-		
+
 
 Example Workflow
 
@@ -30,7 +29,7 @@ Example Workflow
 2. Nintendo 	(this is just a screen selector, no hardware logic besides switching screens)
 3. Wii 			(this fires any necessary commands)
 
-		
+
 ##### Note:
 
 * Serial I/O logic symbols can send directly to the tx/rx lines of the Serial Drivers on the control unit, so use this to enable functionality.
@@ -38,13 +37,14 @@ Example Workflow
 * Set/Reset Latch to turn button into switch
 
 ##### TO DO:
- 
+
 * Re-capture OSSC missing buttons #8 and Sampling Phase -/+
 * Finish discreet Device control screens on touchpanel
-   * OSSC
+   * OSSC - Almost Done
    * Top TV
    * Bottom TV
-   * BVM?
+   * BVM? (Requires testing of below)
+   * Extron Matrix Switchers (Almost got switching functionality working)
 * Touchpanel Icons
    * Power
    * Back
@@ -56,4 +56,6 @@ Example Workflow
 * If Above doesn't work, Investigate "Parallel" control port 2 on BVM for control
 * Maybe Updated VTPro/SIMPL? (Consider Calling support and pretending to be a tech dept for some company) This will enable other two-way touchpanels, enabling additional (maybe simpler) logic.
 * General Volume Control settings (Home button activates an enable that sets vol/channel button pairs to control volume on each tv
+* Investigate avoiding clashes
+* Tidy up signals that don't go anywhere
 * Any Additional functionality?
