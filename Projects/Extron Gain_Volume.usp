@@ -3,6 +3,7 @@
 
 DIGITAL_INPUT Enable;
 DIGITAL_INPUT isInput;
+DIGITAL_INPUT isXP300;
 ANALOG_INPUT IO;
 DIGITAL_INPUT up;
 DIGITAL_INPUT down;
@@ -16,29 +17,49 @@ CHANGE IO
 }
 PUSH up
 {
-	if(Enable && input > 0)
-	{		
-		if(isInput)
+	if(!isXP300)
+	{
+		if(Enable && input > 0)
+		{		
+			if(isInput)
+			{
+				Extron_TX$ = ItoA(input) + "+G";
+			}
+			else
+			{
+				Extron_TX$ = ItoA(input) + "+V";
+			}
+		} 
+	}
+	else
+	{
+		if(Enable && isInput && input > 0)
 		{
-			Extron_TX$ = ItoA(input) + "+G";
-		}
-		else
-		{
-			Extron_TX$ = ItoA(input) + "+V";
+			Extron_TX$ = ItoA(input) + "{G";
 		}
 	}
 }
 PUSH down
 {
-	if(Enable && input > 0)
-	{		
-		if(isInput)
+	if(!isXP300)
+	{
+		if(Enable && input > 0)
+		{		
+			if(isInput)
+			{
+				Extron_TX$ = ItoA(input) + "-G";
+			}
+			else
+			{
+				Extron_TX$ = ItoA(input) + "-V";
+			}
+		} 
+	}
+	else
+	{
+		if(Enable && isInput && input > 0)
 		{
-			Extron_TX$ = ItoA(input) + "-G";
-		}
-		else
-		{
-			Extron_TX$ = ItoA(input) + "-V";
+			Extron_TX$ = ItoA(input) + "}G";
 		}
 	}
 }

@@ -1,0 +1,52 @@
+#SYMBOL_NAME "Extron Mute"
+#CATEGORY "32" //Miscellaneous
+
+DIGITAL_INPUT Enable;
+DIGITAL_INPUT isVideo;
+ANALOG_INPUT output;
+DIGITAL_INPUT button;
+
+STRING_OUTPUT Extron_TX$;
+INTEGER mute;
+INTEGER out;
+          
+CHANGE output
+{
+	out = output;
+}
+PUSH button
+{
+if(mute = 1)
+mute = 0;
+else if(mute = 0)
+mute=1;
+
+	if(mute=0 && Enable && out > 0)
+	{		
+		if(isVideo)
+		{
+			Extron_TX$ = ItoA(out) + "*1B";
+		}
+		else
+		{
+			Extron_TX$ = ItoA(out) + "*1Z";
+		}
+	} 
+	else if(mute=1 && Enable && out > 0)
+	{		
+		if(isVideo)
+		{
+			Extron_TX$ = ItoA(out) + "*0B";
+		}
+		else
+		{
+			Extron_TX$ = ItoA(out) + "*0Z";
+		}
+	} 
+}
+
+CHANGE Enable
+{
+	out=0;
+	mute = 1;
+}

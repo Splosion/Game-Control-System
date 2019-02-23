@@ -1,5 +1,5 @@
-#ifndef __S2_EXTRON_GAIN_VOLUME_H__
-#define __S2_EXTRON_GAIN_VOLUME_H__
+#ifndef __S2_EXTRON_MUTE_H__
+#define __S2_EXTRON_MUTE_H__
 
 
 
@@ -8,17 +8,15 @@
 /*
 * DIGITAL_INPUT
 */
-#define __S2_Extron_Gain_Volume_ENABLE_DIG_INPUT 0
-#define __S2_Extron_Gain_Volume_ISINPUT_DIG_INPUT 1
-#define __S2_Extron_Gain_Volume_ISXP300_DIG_INPUT 2
-#define __S2_Extron_Gain_Volume_UP_DIG_INPUT 3
-#define __S2_Extron_Gain_Volume_DOWN_DIG_INPUT 4
+#define __S2_Extron_Mute_ENABLE_DIG_INPUT 0
+#define __S2_Extron_Mute_ISVIDEO_DIG_INPUT 1
+#define __S2_Extron_Mute_BUTTON_DIG_INPUT 2
 
 
 /*
 * ANALOG_INPUT
 */
-#define __S2_Extron_Gain_Volume_IO_ANALOG_INPUT 0
+#define __S2_Extron_Mute_OUTPUT_ANALOG_INPUT 0
 
 
 
@@ -32,7 +30,7 @@
 * ANALOG_OUTPUT
 */
 
-#define __S2_Extron_Gain_Volume_EXTRON_TX$_STRING_OUTPUT 0
+#define __S2_Extron_Mute_EXTRON_TX$_STRING_OUTPUT 0
 
 
 
@@ -94,7 +92,7 @@
 * STRUCTURE
 */
 
-START_GLOBAL_VAR_STRUCT( S2_Extron_Gain_Volume )
+START_GLOBAL_VAR_STRUCT( S2_Extron_Mute )
 {
    void* InstancePtr;
    struct GenericOutputString_s sGenericOutStr;
@@ -102,12 +100,13 @@ START_GLOBAL_VAR_STRUCT( S2_Extron_Gain_Volume )
 
 };
 
-START_NVRAM_VAR_STRUCT( S2_Extron_Gain_Volume )
+START_NVRAM_VAR_STRUCT( S2_Extron_Mute )
 {
-   unsigned short __INPUT;
+   unsigned short __MUTE;
+   unsigned short __OUT;
 };
 
 
 
-#endif //__S2_EXTRON_GAIN_VOLUME_H__
+#endif //__S2_EXTRON_MUTE_H__
 
