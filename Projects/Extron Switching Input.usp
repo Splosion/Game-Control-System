@@ -8,11 +8,10 @@ INTEGER i;
 
 PUSH input
 {
-INTEGER i_new;
-i=GETLASTMODIFIEDARRAYINDEX();
-If(Enable && i > 0)
-{
-out_num = i;
-}
-
+	INTEGER i_new;
+	i=GETLASTMODIFIEDARRAYINDEX();
+		If(Enable &&  i <=32 && i > 0 )
+		{
+			out_num = i;
+		}
 }
