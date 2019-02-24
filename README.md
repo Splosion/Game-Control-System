@@ -38,7 +38,7 @@ Example Workflow
 ##### TO DO:
 
 
-* Finish discreet Device control screens on touchpanel
+* Finish discrete Device control screens on touchpanel
    * BVM? (Requires testing of below)
 * Touchpanel Icons
    * Power
