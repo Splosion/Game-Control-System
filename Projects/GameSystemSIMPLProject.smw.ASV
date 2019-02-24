@@ -1821,7 +1821,7 @@ Ad=03,04,05,06,07,08,09,0A,0B,0C,0D,0E,0F,10,11,12,13,14,15,16,17,18,19,1A,1B,1C
 ]
 [
 ObjTp=Dv
-Nm=MT-1000C (RF)
+Nm=MT-1000C
 H=837
 PrH=326
 DvC=806
@@ -3371,7 +3371,7 @@ DvH=837
 PrH=18
 CF=2
 n1O=181
-Cmn1=MT-1000C (RF)
+Cmn1=MT-1000C\\
 mO=181
 tO=181
 O1=371
@@ -3435,7 +3435,7 @@ O58=87
 O59=88
 O60=89
 O61=151
-O62=616
+O62=475
 O63=326
 O64=329
 O65=335
@@ -3543,6 +3543,9 @@ O166=545
 O167=553
 O168=551
 O169=546
+O170=477
+O171=478
+O172=479
 O173=532
 O174=550
 O175=620
@@ -3796,14 +3799,14 @@ P8=
 ObjTp=Sm
 H=29
 SmC=12
-PrH=88
+PrH=393
 CF=2
 n1I=2
 n1O=2
 Cmn1=Top TV\\
 mI=2
 I1=43
-I2=70
+I2=480
 mO=2
 tO=2
 O1=4
@@ -3812,14 +3815,14 @@ O1=4
 ObjTp=Sm
 H=30
 SmC=12
-PrH=87
+PrH=392
 CF=2
 n1I=2
 n1O=2
 Cmn1=Bottom TV\\
 mI=2
 I1=22
-I2=70
+I2=481
 mO=2
 tO=2
 O1=7
@@ -4670,7 +4673,7 @@ SmC=156
 PrH=4
 CF=2
 Cmn1=Controls\\
-mC=12
+mC=13
 C1=120
 C2=125
 C3=126
@@ -4683,6 +4686,7 @@ C9=72
 C10=73
 C11=74
 C12=308
+C13=395
 ]
 [
 ObjTp=Sm
@@ -4797,7 +4801,7 @@ n1O=2
 Cmn1=Control BVM 202 Rxi\\
 mI=2
 I1=86
-I2=70
+I2=482
 mO=2
 tO=2
 O1=157
@@ -4813,7 +4817,7 @@ n1O=2
 Cmn1=Control OSSC 202 Rxi\\
 mI=2
 I1=87
-I2=70
+I2=482
 mO=2
 tO=2
 O1=158
@@ -5532,10 +5536,10 @@ Cmn1=Bottom TV\\
 mC=6
 C1=85
 C2=36
-C3=30
-C4=98
-C5=103
-C6=104
+C3=98
+C4=103
+C5=104
+C6=392
 ]
 [
 ObjTp=Sm
@@ -5547,10 +5551,10 @@ Cmn1=Top TV\\
 mC=6
 C1=37
 C2=90
-C3=29
-C4=107
-C5=111
-C6=115
+C3=107
+C4=111
+C5=115
+C6=393
 ]
 [
 ObjTp=Sm
@@ -6359,7 +6363,7 @@ n1O=2
 Cmn1=6x2 HDMI\\
 mI=2
 I1=84
-I2=70
+I2=482
 mO=2
 tO=2
 O1=388
@@ -6603,7 +6607,7 @@ n1O=2
 Cmn1=4x2 HDMI\\
 mI=2
 I1=85
-I2=70
+I2=482
 mO=2
 tO=2
 O1=413
@@ -7140,7 +7144,7 @@ n1O=2
 Cmn1=OSSC\\
 mI=2
 I1=83
-I2=70
+I2=482
 mO=2
 tO=2
 O1=426
@@ -7797,7 +7801,7 @@ n1O=2
 Cmn1=Edifier\\
 mI=2
 I1=151
-I2=70
+I2=482
 mO=2
 tO=2
 O1=466
@@ -7905,7 +7909,7 @@ n1O=2
 Cmn1=Extron 12x8\\
 mI=2
 I1=88
-I2=70
+I2=482
 mO=2
 tO=2
 O1=472
@@ -7920,7 +7924,7 @@ n1I=14
 n1O=12
 Cmn1=Inputs\\
 mI=14
-I1=70
+I1=482
 I3=326
 I4=329
 I5=335
@@ -7982,7 +7986,7 @@ n1I=10
 n1O=8
 Cmn1=Outputs\\
 mI=10
-I1=70
+I1=482
 I3=361
 I4=432
 I5=433
@@ -8287,7 +8291,7 @@ n1O=2
 Cmn1=Panasonic TV\\
 mI=2
 I1=81
-I2=70
+I2=482
 mO=2
 tO=2
 O1=552
@@ -8303,7 +8307,7 @@ n1O=2
 Cmn1=Samsung TV\\
 mI=2
 I1=80
-I2=70
+I2=482
 mO=2
 tO=2
 O1=554
@@ -9685,7 +9689,7 @@ n1O=2
 Cmn1=Extron 8x4\\
 mI=2
 I1=89
-I2=70
+I2=482
 mO=2
 tO=2
 O1=683
@@ -9716,7 +9720,7 @@ n1I=10
 n1O=8
 Cmn1=Inputs\\
 mI=10
-I1=70
+I1=482
 I3=326
 I4=329
 I5=335
@@ -10499,7 +10503,7 @@ n1I=6
 n1O=4
 Cmn1=Outputs\\
 mI=6
-I1=70
+I1=482
 I3=361
 I4=432
 I5=433
@@ -10710,6 +10714,76 @@ tO=1
 O1=13
 mP=1
 P1=
+]
+[
+ObjTp=Sm
+H=391
+SmC=3
+PrH=392
+CF=2
+n1I=2
+n1O=1
+Cmn1=Home/Back Reset\\
+mI=2
+I1=70
+I2=477
+mO=1
+tO=1
+O1=481
+]
+[
+ObjTp=Sm
+H=392
+SmC=156
+PrH=87
+CF=2
+Cmn1=Enable\\
+mC=2
+C1=30
+C2=391
+]
+[
+ObjTp=Sm
+H=393
+SmC=156
+PrH=88
+CF=2
+Cmn1=Enable\\
+mC=2
+C1=29
+C2=394
+]
+[
+ObjTp=Sm
+H=394
+SmC=3
+PrH=393
+CF=2
+n1I=2
+n1O=1
+Cmn1=Home/Back Reset\\
+mI=2
+I1=70
+I2=477
+mO=1
+tO=1
+O1=480
+]
+[
+ObjTp=Sm
+H=395
+SmC=3
+PrH=68
+CF=2
+n1I=2
+n1O=1
+Cmn1=Home/Back Reset\\
+mI=2
+I1=70
+I2=479
+mO=1
+tO=1
+O1=482
 ]
 [
 ObjTp=Sg
@@ -13078,8 +13152,43 @@ Nm=NormalControlBackBottomTV_Select
 ]
 [
 ObjTp=Sg
+H=475
+Nm=PanelCD-i
+]
+[
+ObjTp=Sg
 H=476
 Nm=PanelControls
+]
+[
+ObjTp=Sg
+H=477
+Nm=PanelSystemBack
+]
+[
+ObjTp=Sg
+H=478
+Nm=PanelControlBack
+]
+[
+ObjTp=Sg
+H=479
+Nm=PanelDeviceControlBack
+]
+[
+ObjTp=Sg
+H=480
+Nm=ResetTopTV
+]
+[
+ObjTp=Sg
+H=481
+Nm=ResetBottomTV
+]
+[
+ObjTp=Sg
+H=482
+Nm=ResetDeviceControl
 ]
 [
 ObjTp=Sg
@@ -13677,11 +13786,6 @@ Nm=PanasonicTV_Devices_Select
 ObjTp=Sg
 H=615
 Nm=NormalControlMuteBottomTV_Select
-]
-[
-ObjTp=Sg
-H=616
-Nm=PanelCD-i
 ]
 [
 ObjTp=Sg
