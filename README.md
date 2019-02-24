@@ -3,9 +3,9 @@
 
 Start Page
 
-	* TV Choice
-	* Controls (Volume, etc)
-		- All (useful) controls for any individual device are in a page dedicated to that device.
+* TV Choice
+* Controls (Volume, etc)
+	- All (useful) controls for any individual device are in a page dedicated to that device.
 
 If a Display is chosen:
 
