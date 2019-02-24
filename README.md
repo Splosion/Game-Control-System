@@ -2,9 +2,9 @@
 
 
 Start Page
-
-* TV Choice* Controls (Volume, etc)
-	- All (useful) controls for any individual device are in a page dedicated to that device.
+	* TV Choice
+	* Controls (Volume, etc)
+		- All (useful) controls for any individual device are in a page dedicated to that device.
 
 If a Display is chosen:
 
@@ -26,7 +26,7 @@ Example Workflow
 
 1. TV Choice	(Enables a signal to say this screen is the choice)
 2. Nintendo 	(this is just a screen selector, no hardware logic besides switching screens)
-3. Wii 			(this fires any necessary commands)
+3. Wii 			(this fires Extron Analog switcher commands, OSSC IR commands, HDMI Switcher Commands, Turns on the selected TV and switches it to the correct channel after a delay)
 
 
 ##### Note:
