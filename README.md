@@ -43,6 +43,11 @@ Example Workflow
    * BVM? (Requires testing of below)
 * Investigate BVM Control via RS485
 * If Above doesn't work, Investigate "Parallel" control port 2 on BVM for control
+	* Potentially all 8 relays necessary, quite wasteful
+	* Is configurable in BVM menu
+		* Can set composite channel and rgb channel
+		* Enabling/disabling ext sync. 
+		* Power toggle is also possible.
 * Maybe Updated VTPro/SIMPL? (Consider Calling support and pretending to be a tech dept for some company) This will enable other two-way touchpanels, enabling additional (maybe simpler) logic.
 * Investigate avoiding Serial jamming
 * Tidy up signals that don't go anywhere
