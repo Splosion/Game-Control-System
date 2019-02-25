@@ -22,6 +22,7 @@ If a Display is chosen:
 * Misc
 * MicroConsoles
 
+In addition to the above, the Controls page contains a list of devices (switchers, processors and displays) that gives access to all of the (useful) commands that a user might want, in order to fix a configuration issue on any of the devices.
 
 Example Workflow
 
@@ -32,9 +33,9 @@ Example Workflow
 
 ##### Note:
 
-* Serial I/O logic symbols can send directly to the tx/rx lines of the Serial Drivers on the control unit, so use this to enable functionality.
-* Use Interlock symbol for each IR device to prevent clashes
-* Set/Reset Latch to turn button into switch
+* Serial I/O logic symbols can send directly to the tx/rx lines of the Serial Drivers on the control unit, so use this to enable functionality without directly editing the serial driver.
+* Use Interlock symbol for each IR device to prevent clashes, this prevents the possibility of weirdness on IR controlled devices.
+* Set/Reset Latch to turn button into switch. This can be used to set an enable signal for use in AND symbols, to prevent logic firing when it isn't supposed to.
 
 ##### TO DO:
 
