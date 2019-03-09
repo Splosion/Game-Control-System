@@ -22,6 +22,7 @@ If a Display is chosen:
 * Misc
 * MicroConsoles
 
+In addition to the above, the Controls page contains a list of devices (switchers, processors and displays) that gives access to all of the (useful) commands that a user might want, in order to fix a configuration issue on any of the devices.
 
 Example Workflow
 
@@ -32,17 +33,24 @@ Example Workflow
 
 ##### Note:
 
-* Serial I/O logic symbols can send directly to the tx/rx lines of the Serial Drivers on the control unit, so use this to enable functionality.
-* Use Interlock symbol for each IR device to prevent clashes
-* Set/Reset Latch to turn button into switch
+* Serial I/O logic symbols can send directly to the tx/rx lines of the Serial Drivers on the control unit, so use this to enable functionality without directly editing the serial driver.
+* Use Interlock symbol for each IR device to prevent clashes, this prevents the possibility of weirdness on IR controlled devices.
+* Set/Reset Latch to turn button into switch. This can be used to set an enable signal for use in AND symbols, to prevent logic firing when it isn't supposed to.
 
 ##### TO DO:
 
 
+* Fix Samsung TV Power Off
+* Swap Panasonic & Samsung TV Power off Buttons
 * Finish discrete Device control screens on touchpanel
    * BVM? (Requires testing of below)
 * Investigate BVM Control via RS485
 * If Above doesn't work, Investigate "Parallel" control port 2 on BVM for control
+	* Potentially all 8 relays necessary, quite wasteful
+	* Is configurable in BVM menu
+		* Can set composite channel and rgb channel
+		* Enabling/disabling ext sync. 
+		* Power toggle is also possible.
 * Maybe Updated VTPro/SIMPL? (Consider Calling support and pretending to be a tech dept for some company) This will enable other two-way touchpanels, enabling additional (maybe simpler) logic.
 * Investigate avoiding Serial jamming
 * Tidy up signals that don't go anywhere
