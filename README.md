@@ -40,8 +40,7 @@ Example Workflow
 ##### TO DO:
 
 
-* Fix Samsung TV Power Off
-* Swap Panasonic & Samsung TV Power off Buttons
+
 * Finish discrete Device control screens on touchpanel
    * BVM? (Requires testing of below)
 * Investigate BVM Control via RS485
