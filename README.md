@@ -61,4 +61,4 @@ Example Workflow
 * Incorporate RetroTink2x (Relays?)
 * Any Additional functionality?
 	* Extron YC6
-	* Sony 1024?
+	* Sony 1024? (Requires investigation of Sony's S-Control)
