@@ -46,6 +46,7 @@ Example Workflow
 * Investigate BVM Control via RS485
 * If Above doesn't work, Investigate "Parallel" control port 2 on BVM for control
 	* Potentially all 8 relays necessary, quite wasteful
+		* This will more than likely be less, around 4-5 depending on what I want
 	* Is configurable in BVM menu
 		* Can set composite channel and rgb channel
 		* Enabling/disabling ext sync. 
