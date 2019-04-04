@@ -56,6 +56,7 @@ Example Workflow
 * Tidy up signals that don't go anywhere
 	* OUYA
 	* Mini Famicom
+	* Steamlink
 	* Composite Select
 	* S-Video Select
 * Incorporate RetroTink2x (Relays?)
