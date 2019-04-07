@@ -44,15 +44,9 @@ Example Workflow
 * Finish discrete Device control screens on touchpanel
    * BVM? (Requires testing of below)
 * Investigate BVM Control via RS485
-* If Above doesn't work, Investigate "Parallel" control port 2 on BVM for control
-	* Potentially all 8 relays necessary, quite wasteful
-		* This will more than likely be less, around 4-5 depending on what I want
-	* Is configurable in BVM menu
-		* Can set composite channel and rgb channel
-		* Enabling/disabling ext sync. 
-		* Power toggle is also possible.
+* BVM "REMOTE 2" Function described in User Manual. Ext Sync toggle is troublesome, it's much easier to configure a specific channel for such each desired setting (up to a max of 7 channels)
 * Maybe Updated VTPro/SIMPL? (Consider Calling support and pretending to be a tech dept for some company) This will enable other two-way touchpanels, enabling additional (maybe simpler) logic.
-* Investigate avoiding Serial jamming
+* Investigate avoiding Serial jamming (No jamming is apparent currently)
 * Tidy up signals that don't go anywhere
 	* OUYA
 	* Mini Famicom
