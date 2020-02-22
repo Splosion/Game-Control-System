@@ -39,13 +39,25 @@ Example Workflow
 
 ##### TO DO:
 
-
-
+* Work out Console -> Crosspoint -> Rxi -> Crosspoint -> OSSC/BVM routing (Potentially multiple Serial fires from a single button press)
+* Work out Keeping state of outputs for duplicate devices -> Rxi 202 #1 in use, use #2 instead, same for DSC, audio options etc
+* New Devices
+	* Power switch
+	* YC SW6
+	* DXP 84
+	* C2-1350
+	* Toslink 4x2
+	* Onkyo AVR
+	* DSC-1024G (Limited controls)
+	* RetroTink2x
+* Capture IR 
+	* Carby
+	* Xbox One
+	* Toslink Switch
+	* Onkyo AVR
+* UI for new TPS-6x (multiple if they arrive)
+* BVM Serial Control for direct controls
 * Finish discrete Device control screens on touchpanel
-   * BVM? (Requires testing of below)
-* Investigate BVM Control via RS485
-* BVM "REMOTE 2" Function described in User Manual. Ext Sync toggle is troublesome, it's much easier to configure a specific channel for such each desired setting (up to a max of 7 channels)
-* Maybe Updated VTPro/SIMPL? (Consider Calling support and pretending to be a tech dept for some company) This will enable other two-way touchpanels, enabling additional (maybe simpler) logic.
 * Investigate avoiding Serial jamming (No jamming is apparent currently)
 * Tidy up signals that don't go anywhere
 	* OUYA
@@ -53,7 +65,4 @@ Example Workflow
 	* Steamlink
 	* Composite Select
 	* S-Video Select
-* Incorporate RetroTink2x (Relays?)
 * Any Additional functionality?
-	* Extron YC6
-	* Sony 1024? (Requires investigation of Sony's S-Control)

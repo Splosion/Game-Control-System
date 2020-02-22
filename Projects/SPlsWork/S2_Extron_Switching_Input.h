@@ -4,6 +4,9 @@
 
 
 
+/*
+* Constructor and Destructor
+*/
 
 /*
 * DIGITAL_INPUT
@@ -11,7 +14,7 @@
 #define __S2_Extron_Switching_Input_ENABLE_DIG_INPUT 0
 
 #define __S2_Extron_Switching_Input_INPUT_DIG_INPUT 1
-#define __S2_Extron_Switching_Input_INPUT_ARRAY_LENGTH 12
+#define __S2_Extron_Switching_Input_INPUT_ARRAY_LENGTH 32
 
 /*
 * ANALOG_INPUT
@@ -30,6 +33,11 @@
 */
 #define __S2_Extron_Switching_Input_OUT_NUM_ANALOG_OUTPUT 0
 
+
+
+/*
+* Direct Socket Variables
+*/
 
 
 

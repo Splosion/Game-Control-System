@@ -2,7 +2,7 @@
 #CATEGORY "32" //Miscellaneous
 
 DIGITAL_INPUT Enable;
-DIGITAL_INPUT input[12];
+DIGITAL_INPUT input[32];
 ANALOG_OUTPUT out_num;
 INTEGER i;
 
