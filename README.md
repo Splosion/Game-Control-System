@@ -17,10 +17,36 @@ If a Display is chosen:
 	* Gamecube
 	* Wii
 * Sony
+	* PS1
+	* PS2 PAL
+	* PS2 JP
+	* PSP
+	* PS3
+	* PS4
+	* PS4/PSVR
+	* PSTV
 * Sega
+	* Master System
+	* Mega Drive
+	* Saturn PAL
+	* Saturn JP
+	* Dreamcast
 * Microsoft(?)
+	* Xbox
+	* Xbox 360
+	* Xbox One S
 * Misc
+	* Intellivision
+	* Philips CD-i
+	* Philips VideoPac G7000
+	* Atari 2600
+	* Atari Jaguar
+	* NEO GEO MVS
 * MicroConsoles
+	* Famicom Mini
+	* SNES Mini
+	* PS1 Classic
+	* OUYA
 
 In addition to the above, the Controls page contains a list of devices (switchers, processors and displays) that gives access to all of the (useful) commands that a user might want, in order to fix a configuration issue on any of the devices.
 
