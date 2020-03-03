@@ -67,6 +67,9 @@ Example Workflow
 
 * Work out Console -> Crosspoint -> Rxi -> Crosspoint -> OSSC/BVM routing (Potentially multiple Serial fires from a single button press)
 * Work out Keeping state of outputs for duplicate devices -> Rxi 202 #1 in use, use #2 instead, same for DSC, audio options etc
+* Query all extron device statuses on startup and set options for touchpanel feedback
+* Check serial response messages from extron devices
+* Network control? Panasonic, Extron, etc?
 * New Devices
 	* Power switch
 	* YC SW6
