@@ -1,0 +1,86 @@
+<ButtonSettings>
+  <System Name="CP 300 128 SERIES/ MVX 128 / MTX 50" />
+  <Crops>False</Crops>
+  <VCentered>True</VCentered>
+  <InternalBoxes>False</InternalBoxes>
+  <Row>
+    <Setting Lines="1">
+      <Image>C:\Users\Splode\OneDrive\Equipment Documentation\Logos\wii_2.png</Image>
+    </Setting>
+    <Setting Lines="3">
+      <Image>D:\Downloads\ps2.png</Image>
+      <Bottom>
+        <FontName>Nunito ExtraBold</FontName>
+        <FontSize>8</FontSize>
+        <FontColor>Black</FontColor>
+        <FontBold>True</FontBold>
+        <TextAlign>Center</TextAlign>
+        <Text>PAL</Text>
+      </Bottom>
+    </Setting>
+    <Setting Lines="3">
+      <Image>D:\Downloads\ps2.png</Image>
+      <Bottom>
+        <FontName>Nunito ExtraBold</FontName>
+        <FontSize>8</FontSize>
+        <FontColor>Black</FontColor>
+        <FontBold>True</FontBold>
+        <TextAlign>Center</TextAlign>
+        <Text>JPN</Text>
+      </Bottom>
+    </Setting>
+    <Setting Lines="3">
+      <Image>C:\Users\Splode\OneDrive\Equipment Documentation\Logos\psp_2.png</Image>
+    </Setting>
+    <Setting Lines="3">
+      <Image>C:\Users\Splode\OneDrive\Equipment Documentation\Logos\xbox_2.png</Image>
+    </Setting>
+    <Setting Lines="3">
+      <Image>C:\Users\Splode\OneDrive\Equipment Documentation\Logos\ps3_2.png</Image>
+    </Setting>
+    <Setting Lines="3">
+      <Image>D:\Downloads\xbox_360.png</Image>
+    </Setting>
+    <Setting Lines="3">
+      <Image>C:\Users\Splode\OneDrive\Equipment Documentation\Logos\wiiu_2.png</Image>
+    </Setting>
+    <Setting Lines="3">
+      <Image>C:\Users\Splode\OneDrive\Equipment Documentation\Logos\xp300_blank_label.png</Image>
+    </Setting>
+    <Setting Lines="3">
+      <Image>C:\Users\Splode\OneDrive\Equipment Documentation\Logos\xp300_blank_label.png</Image>
+    </Setting>
+    <Setting Lines="3">
+      <Image>C:\Users\Splode\OneDrive\Equipment Documentation\Logos\xp300_blank_label.png</Image>
+    </Setting>
+    <Setting Lines="3">
+      <Image>C:\Users\Splode\OneDrive\Equipment Documentation\Logos\xp300_blank_label.png</Image>
+    </Setting>
+  </Row>
+  <Row>
+    <Setting Lines="3">
+      <Image>C:\Users\Splode\OneDrive\Equipment Documentation\Logos\ossc_YPbPr.png</Image>
+    </Setting>
+    <Setting Lines="3">
+      <Image>C:\Users\Splode\OneDrive\Equipment Documentation\Logos\retrotink_scaled.png</Image>
+    </Setting>
+    <Setting Lines="3">
+      <Image>C:\Users\Splode\OneDrive\Equipment Documentation\Logos\c2_480p_240p.png</Image>
+    </Setting>
+    <Setting Lines="3">
+      <Image>C:\Users\Splode\OneDrive\Equipment Documentation\Logos\dsc-1024g.png</Image>
+    </Setting>
+    <Setting Lines="3">
+      <Image>C:\Users\Splode\OneDrive\Equipment Documentation\Logos\xp300_blank_label.png</Image>
+    </Setting>
+    <Setting Lines="3">
+      <Image>C:\Users\Splode\OneDrive\Equipment Documentation\Logos\xp300_blank_label.png</Image>
+    </Setting>
+    <Setting Lines="3">
+      <Image>C:\Users\Splode\OneDrive\Equipment Documentation\Logos\xp300_blank_label.png</Image>
+    </Setting>
+    <Setting Lines="3">
+      <Image>C:\Users\Splode\OneDrive\Equipment Documentation\Logos\xp300_blank_label.png</Image>
+    </Setting>
+  </Row>
+</ButtonSettings>

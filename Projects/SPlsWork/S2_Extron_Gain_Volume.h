@@ -4,6 +4,9 @@
 
 
 
+/*
+* Constructor and Destructor
+*/
 
 /*
 * DIGITAL_INPUT
@@ -33,6 +36,11 @@
 */
 
 #define __S2_Extron_Gain_Volume_EXTRON_TX$_STRING_OUTPUT 0
+
+
+/*
+* Direct Socket Variables
+*/
 
 
 

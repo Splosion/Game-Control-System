@@ -4,6 +4,9 @@
 
 
 
+/*
+* Constructor and Destructor
+*/
 
 /*
 * DIGITAL_INPUT
@@ -33,6 +36,11 @@ CREATE_STRING_STRUCT( S2_Extron_Switching_IO, __TYPE, __S2_Extron_Switching_IO_T
 */
 
 #define __S2_Extron_Switching_IO_EXTRON_TX$_STRING_OUTPUT 0
+
+
+/*
+* Direct Socket Variables
+*/
 
 
 

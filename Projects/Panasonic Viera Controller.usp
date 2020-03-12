@@ -1,0 +1,24 @@
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+#ENABLE_TRACE
+
+#DEFINE_CONSTANT PORT 55000
+#DEFINE_CONSTANT IP "192.168.1.19"
+
+STRING_INPUT Command[1024];
+DIGITAL_INPUT Send;
+
+TCP_CLIENT
+	tcpSocket[2000];
+
+PUSH Send
+{
+socketConnectClient(tcpSocket, IP, Port, 0);
+}
+
+SOCKETCONNECT tcpSocket
+{
+socketSend(tcpSocket, Command);
+
+}
+

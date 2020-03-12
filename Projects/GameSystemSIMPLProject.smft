@@ -1,0 +1,15 @@
+<Device Model="PRO2">
+   <Network Type="Ethernet" Id="08"/>
+   <Network Type="Cresnet" Id="09">
+      <Device Model="CNRFGW" DeviceId="03" Name="CNRFGWA-418">
+         <Network Type="RF"/>
+      </Device>
+      <Device Model="CEN-HPRFGW" DeviceId="0A" Name="CEN-HPRFGW (Cresnet)">
+         <Network Type="RF">
+            <Device Model="TPS-6X," DeviceId="03" Name="TPS-6X (RF)"/>
+         </Network>
+      </Device>
+      <Device Model="CslaveAV2" DeviceId="14" Name="AV2 Remote Cresnet Processing"/>
+      <Device Model="CslaveAV2" DeviceId="1E" Name="AV2 Remote Cresnet Processing"/>
+   </Network>
+</Device>
