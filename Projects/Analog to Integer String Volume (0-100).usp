@@ -1,0 +1,20 @@
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+#ENABLE_TRACE
+
+ANALOG_INPUT Volume_In;
+STRING_OUTPUT Volume_Out$;
+CHANGE Volume_In
+{
+	if(Volume_In>100)
+	{
+		Volume_Out$=IToA(100);
+	}
+	else if(Volume_In<0)
+	{
+		Volume_Out$ = IToA(0);
+	}
+	else
+		Volume_Out$ = IToA(Volume_In);
+}
+

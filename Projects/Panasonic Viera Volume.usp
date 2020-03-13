@@ -1,0 +1,25 @@
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+#ENABLE_TRACE
+
+ANALOG_INPUT Volume_In;
+STRING_OUTPUT Volume_Out$;
+
+STRING VolumeLevel[3];
+
+CHANGE Volume_In
+{
+	if(Volume_In>100)
+	{
+		VolumeLevel=IToA(100);
+	}
+	else if(Volume_In<0)
+	{
+		VolumeLevel = IToA(0);
+	}
+	else
+		VolumeLevel = IToA(Volume_In);
+
+Volume_Out$ = "<Envelope><Body><SetVolume><InstanceID>0</InstanceID><Channel>Master</Channel><DesiredVolume>" + VolumeLevel + "</DesiredVolume></SetVolume></Body></Envelope>";
+}
+

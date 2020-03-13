@@ -69,16 +69,26 @@ Example Workflow
 * Work out Keeping state of outputs for duplicate devices -> Rxi 202 #1 in use, use #2 instead, same for DSC, audio options etc
 * Query all extron device statuses on startup and set options for touchpanel feedback
 * Check serial response messages from extron devices
-* Network control? Panasonic, Extron, etc?
+* Fully Implement Panasonic Network Control
+	* Use LAN Protocol Notes
+	* Check and keep state
+	* Capture response fully before parsing
+* Extron Crosspoint Network Implementation
+	* Keep switching simple with existing SIMPL+ Modules
 * New Devices
-	* Power switch
-	* YC SW6
-	* DXP 84
-	* C2-1350
-	* Toslink 4x2
-	* Onkyo AVR
-	* DSC-1024G (Limited controls)
-	* RetroTink2x
+	* TCP/IP
+		* DXP 84
+		* Crosspoint 450 1616
+		* Power switch
+	* Serial
+		* YC SW6
+		* C2-1350
+	*IR
+		* Toslink 4x2
+		* Onkyo AVR
+		* DSC-1024G (Limited controls, Uses Sony Control-S)
+	* Other
+		* RetroTink2x (Relays and I/O Most likely)
 * Capture IR 
 	* Carby
 	* Xbox One
@@ -87,7 +97,7 @@ Example Workflow
 * UI for new TPS-6x (multiple if they arrive)
 * BVM Serial Control for direct controls
 * Finish discrete Device control screens on touchpanel
-* Investigate avoiding Serial jamming (No jamming is apparent currently)
+* Investigate avoiding Serial jamming (No jamming is apparent currently) - I think Serial Concatenation can solve this
 * Tidy up signals that don't go anywhere
 	* OUYA
 	* Mini Famicom
