@@ -1,5 +1,8 @@
 <Device Model="PRO2">
-   <Network Type="Ethernet" Id="08"/>
+   <Network Type="Ethernet" Id="08">
+      <Device Model="AV2 Remote Ethernet Processing" DeviceId="10"/>
+      <Device Model="AV2 Remote Ethernet Processing" DeviceId="11"/>
+   </Network>
    <Network Type="Cresnet" Id="09">
       <Device Model="CNRFGW" DeviceId="03" Name="CNRFGWA-418">
          <Network Type="RF"/>
@@ -9,7 +12,5 @@
             <Device Model="TPS-6X," DeviceId="03" Name="TPS-6X (RF)"/>
          </Network>
       </Device>
-      <Device Model="CslaveAV2" DeviceId="14" Name="AV2 Remote Cresnet Processing"/>
-      <Device Model="CslaveAV2" DeviceId="1E" Name="AV2 Remote Cresnet Processing"/>
    </Network>
 </Device>

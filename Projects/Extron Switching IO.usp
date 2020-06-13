@@ -2,7 +2,7 @@
 #CATEGORY "32" //Miscellaneous
 
 DIGITAL_INPUT Enable;
-STRING_INPUT type[1];
+STRING_PARAMETER type[1];
 ANALOG_INPUT input;
 ANALOG_INPUT output;
 STRING_OUTPUT Extron_TX$;
