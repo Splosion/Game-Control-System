@@ -5,31 +5,32 @@ STRING_PARAMETER Type[1];
 Digital_Input     _skip_;
 Digital_Output     _skip_;
 DIGITAL_INPUT Enable;
-ANALOG_INPUT Input;
-ANALOG_INPUT Output;
-STRING_OUTPUT Extron_TX$;
+ANALOG_INPUT Source;
+ANALOG_INPUT Dest;
+STRING_OUTPUT Extron_TX;
 
 INTEGER in;
 INTEGER prev_in;
 INTEGER out;
 INTEGER prev_out;
 
-CHANGE input
+CHANGE Source
 {
-in = input;
-If(Enable && out > 0 && in != prev_in && in <=32)
+
+in = Source;
+If(Enable && out > 0 && out <= 32 && in != prev_in && in <=32)
 {
-Extron_TX$ = ItoA(in) + "*" + ItoA(out) + type;
+Extron_TX = ItoA(in) + "*" + ItoA(out) + type;
 prev_in=in;
 in=0;
 }
 }
-CHANGE output
+CHANGE Dest
 {
-out = output;
-If(Enable && in > 0 && out != prev_out&& out <=32)
+out = Dest;
+If(Enable && in > 0 && out != prev_out&& out <=32&& in <=32)
 {
-Extron_TX$ = ItoA(in) + "*" + ItoA(out) + type;
+Extron_TX = ItoA(in) + "*" + ItoA(out) + type;
 prev_out=out;
 out=0;
 }

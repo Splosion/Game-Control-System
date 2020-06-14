@@ -17,6 +17,7 @@
   Name=Extron Gain/Volume
   SmplCName=Extron Gain_Volume.usp
   Code=1
+  SysRev5=4.000
   InputCue1=Enable
   InputSigType1=Digital
   InputCue2=isInput

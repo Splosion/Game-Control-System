@@ -27,15 +27,17 @@ namespace UserModule_EXTRON_SWITCHING_INPUT
             try
             {
                 SplusExecutionContext __context__ = SplusThreadStartCode(__SignalEventArg__);
-                ushort I_NEW = 0;
                 
-                
+                __context__.SourceCodeLine = 11;
+                Print( "Input Pushed") ; 
                 __context__.SourceCodeLine = 12;
                 I = (ushort) ( Functions.GetLastModifiedArrayIndex( __SignalEventArg__ ) ) ; 
                 __context__.SourceCodeLine = 13;
+                Print( "Input Was Changed {0:d}", (short)I) ; 
+                __context__.SourceCodeLine = 14;
                 if ( Functions.TestForTrue  ( ( Functions.BoolToInt ( (Functions.TestForTrue ( Functions.BoolToInt ( (Functions.TestForTrue ( ENABLE  .Value ) && Functions.TestForTrue ( Functions.BoolToInt ( I <= 32 ) )) ) ) && Functions.TestForTrue ( Functions.BoolToInt ( I > 0 ) )) ))  ) ) 
                     { 
-                    __context__.SourceCodeLine = 15;
+                    __context__.SourceCodeLine = 16;
                     OUT_NUM  .Value = (ushort) ( I ) ; 
                     } 
                 

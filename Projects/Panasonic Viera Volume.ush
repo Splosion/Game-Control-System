@@ -17,7 +17,7 @@
   Name=Panasonic Viera Volume
   SmplCName=Panasonic Viera Volume.usp
   Code=1
-  SysRev5=3.083
+  SysRev5=4.000
   SMWRev=2.02.05
   InputList2Cue1=Volume_In
   InputList2SigType1=Analog

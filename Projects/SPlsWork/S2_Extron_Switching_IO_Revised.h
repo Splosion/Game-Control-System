@@ -17,8 +17,8 @@
 /*
 * ANALOG_INPUT
 */
-#define __S2_Extron_Switching_IO_Revised_INPUT_ANALOG_INPUT 0
-#define __S2_Extron_Switching_IO_Revised_OUTPUT_ANALOG_INPUT 1
+#define __S2_Extron_Switching_IO_Revised_SOURCE_ANALOG_INPUT 0
+#define __S2_Extron_Switching_IO_Revised_DEST_ANALOG_INPUT 1
 
 
 
@@ -32,7 +32,7 @@
 * ANALOG_OUTPUT
 */
 
-#define __S2_Extron_Switching_IO_Revised_EXTRON_TX$_STRING_OUTPUT 0
+#define __S2_Extron_Switching_IO_Revised_EXTRON_TX_STRING_OUTPUT 0
 
 
 /*
