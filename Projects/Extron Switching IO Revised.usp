@@ -18,17 +18,16 @@ CHANGE Source
 {
 
 in = Source;
-If(Enable && out > 0 && out <= 32 && in != prev_in && in <=32)
+If(Enable && out > 0 && out <= 32 && in <=32)
 {
 Extron_TX = ItoA(in) + "*" + ItoA(out) + type;
-prev_in=in;
 in=0;
 }
 }
 CHANGE Dest
 {
 out = Dest;
-If(Enable && in > 0 && out != prev_out&& out <=32&& in <=32)
+If(Enable && in > 0 && out != prev_out && out <=32&& in <=32)
 {
 Extron_TX = ItoA(in) + "*" + ItoA(out) + type;
 prev_out=out;

@@ -1,0 +1,45 @@
+#SYMBOL_NAME "Rxi Selector"
+#CATEGORY "32" 
+
+DIGITAL_INPUT _SKIP_;
+DIGITAL_INPUT _SKIP_;
+DIGITAL_INPUT _SKIP_;
+DIGITAL_INPUT _SKIP_;
+DIGITAL_INPUT Select;
+DIGITAL_INPUT ResetRxi;
+INTEGER_PARAMETER Rxi01Input;
+INTEGER_PARAMETER Rxi02Input;
+INTEGER_PARAMETER Rxi01Output;
+INTEGER_PARAMETER Rxi02Output;
+
+DIGITAL_OUTPUT _SKIP_;
+DIGITAL_OUTPUT _SKIP_;
+DIGITAL_OUTPUT _SKIP_;
+DIGITAL_OUTPUT _SKIP_;
+ANALOG_OUTPUT SelectedInput;
+ANALOG_OUTPUT SelectedOutput;
+
+INTEGER Rxi_01_on;
+
+PUSH Select
+{
+	if(Rxi_01_on = 1)
+	{
+		SelectedOutput = Rxi02Output;
+		SelectedInput = Rxi02Input;
+		Rxi_01_on = 0;
+	}
+	else
+	{
+		SelectedOutput = Rxi02Output;
+		SelectedInput = Rxi02Input;
+		Rxi_01_on = 1;
+	}
+}
+
+PUSH ResetRxi
+{
+	Rxi_01_on=0;
+	SelectedOutput = 0;
+	SelectedInput = 0;
+}

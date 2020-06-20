@@ -36,13 +36,11 @@ namespace UserModule_EXTRON_SWITCHING_IO_REVISED
                 __context__.SourceCodeLine = 20;
                 IN = (ushort) ( SOURCE  .UshortValue ) ; 
                 __context__.SourceCodeLine = 21;
-                if ( Functions.TestForTrue  ( ( Functions.BoolToInt ( (Functions.TestForTrue ( Functions.BoolToInt ( (Functions.TestForTrue ( Functions.BoolToInt ( (Functions.TestForTrue ( Functions.BoolToInt ( (Functions.TestForTrue ( ENABLE  .Value ) && Functions.TestForTrue ( Functions.BoolToInt ( OUT > 0 ) )) ) ) && Functions.TestForTrue ( Functions.BoolToInt ( OUT <= 32 ) )) ) ) && Functions.TestForTrue ( Functions.BoolToInt (IN != PREV_IN) )) ) ) && Functions.TestForTrue ( Functions.BoolToInt ( IN <= 32 ) )) ))  ) ) 
+                if ( Functions.TestForTrue  ( ( Functions.BoolToInt ( (Functions.TestForTrue ( Functions.BoolToInt ( (Functions.TestForTrue ( Functions.BoolToInt ( (Functions.TestForTrue ( ENABLE  .Value ) && Functions.TestForTrue ( Functions.BoolToInt ( OUT > 0 ) )) ) ) && Functions.TestForTrue ( Functions.BoolToInt ( OUT <= 32 ) )) ) ) && Functions.TestForTrue ( Functions.BoolToInt ( IN <= 32 ) )) ))  ) ) 
                     { 
                     __context__.SourceCodeLine = 23;
                     EXTRON_TX  .UpdateValue ( Functions.ItoA (  (int) ( IN ) ) + "*" + Functions.ItoA (  (int) ( OUT ) ) + TYPE  ) ; 
                     __context__.SourceCodeLine = 24;
-                    PREV_IN = (ushort) ( IN ) ; 
-                    __context__.SourceCodeLine = 25;
                     IN = (ushort) ( 0 ) ; 
                     } 
                 
@@ -63,16 +61,16 @@ namespace UserModule_EXTRON_SWITCHING_IO_REVISED
         {
             SplusExecutionContext __context__ = SplusThreadStartCode(__SignalEventArg__);
             
-            __context__.SourceCodeLine = 30;
+            __context__.SourceCodeLine = 29;
             OUT = (ushort) ( DEST  .UshortValue ) ; 
-            __context__.SourceCodeLine = 31;
+            __context__.SourceCodeLine = 30;
             if ( Functions.TestForTrue  ( ( Functions.BoolToInt ( (Functions.TestForTrue ( Functions.BoolToInt ( (Functions.TestForTrue ( Functions.BoolToInt ( (Functions.TestForTrue ( Functions.BoolToInt ( (Functions.TestForTrue ( ENABLE  .Value ) && Functions.TestForTrue ( Functions.BoolToInt ( IN > 0 ) )) ) ) && Functions.TestForTrue ( Functions.BoolToInt (OUT != PREV_OUT) )) ) ) && Functions.TestForTrue ( Functions.BoolToInt ( OUT <= 32 ) )) ) ) && Functions.TestForTrue ( Functions.BoolToInt ( IN <= 32 ) )) ))  ) ) 
                 { 
-                __context__.SourceCodeLine = 33;
+                __context__.SourceCodeLine = 32;
                 EXTRON_TX  .UpdateValue ( Functions.ItoA (  (int) ( IN ) ) + "*" + Functions.ItoA (  (int) ( OUT ) ) + TYPE  ) ; 
-                __context__.SourceCodeLine = 34;
+                __context__.SourceCodeLine = 33;
                 PREV_OUT = (ushort) ( OUT ) ; 
-                __context__.SourceCodeLine = 35;
+                __context__.SourceCodeLine = 34;
                 OUT = (ushort) ( 0 ) ; 
                 } 
             
