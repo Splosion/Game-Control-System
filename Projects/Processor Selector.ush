@@ -17,8 +17,8 @@
   Exclusions=1,19,20,21,88,89,167,168,179,213,214,215,216,217,225,226,248,249,266,267,310,718,756,854,
   Exclusions_CDS=
   Inclusions_CDS=5,6
-  Name=Rxi Selector
-  SmplCName=Rxi Selector.usp
+  Name=Processor Selector
+  SmplCName=Processor Selector.usp
   Code=1
   SysRev5=4.000
   InputCue1=[~UNUSED~]
@@ -31,7 +31,7 @@
   InputSigType4=Digital
   InputCue5=Select
   InputSigType5=Digital
-  InputCue6=ResetRxi
+  InputCue6=ResetProcessor
   InputSigType6=Digital
   OutputCue1=[~UNUSED~]
   OutputSigType1=Digital
@@ -46,13 +46,13 @@
   OutputList2Cue2=SelectedOutput
   OutputList2SigType2=Analog
   ParamCue1=[Reference Name]
-  ParamCue2=Rxi01Input
+  ParamCue2=Processor01Input
   ParamSigType2=Constant
-  ParamCue3=Rxi02Input
+  ParamCue3=Processor02Input
   ParamSigType3=Constant
-  ParamCue4=Rxi01Output
+  ParamCue4=Processor01Output
   ParamSigType4=Constant
-  ParamCue5=Rxi02Output
+  ParamCue5=Processor02Output
   ParamSigType5=Constant
   MinVariableInputs=6
   MaxVariableInputs=6
@@ -89,9 +89,9 @@
   SmplCOutputCue1=i#
   SmplCInputList2Cue1=an#
   SmplCOutputList2Cue1=ai#
-  SPlus2CompiledName=S2_Rxi_Selector
+  SPlus2CompiledName=S2_Processor_Selector
   SymJam=NonExclusive
-  FileName=Rxi Selector.ush
+  FileName=Processor Selector.ush
   SIMPLPlusModuleEncoding=0
 [END]
 [BEGIN]

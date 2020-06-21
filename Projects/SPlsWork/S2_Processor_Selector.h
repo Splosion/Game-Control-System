@@ -1,5 +1,5 @@
-#ifndef __S2_RXI_SELECTOR_H__
-#define __S2_RXI_SELECTOR_H__
+#ifndef __S2_PROCESSOR_SELECTOR_H__
+#define __S2_PROCESSOR_SELECTOR_H__
 
 
 
@@ -11,8 +11,8 @@
 /*
 * DIGITAL_INPUT
 */
-#define __S2_Rxi_Selector_SELECT_DIG_INPUT 0
-#define __S2_Rxi_Selector_RESETPROCESSOR_DIG_INPUT 1
+#define __S2_Processor_Selector_SELECT_DIG_INPUT 0
+#define __S2_Processor_Selector_RESETPROCESSOR_DIG_INPUT 1
 
 
 /*
@@ -30,8 +30,8 @@
 /*
 * ANALOG_OUTPUT
 */
-#define __S2_Rxi_Selector_SELECTEDINPUT_ANALOG_OUTPUT 0
-#define __S2_Rxi_Selector_SELECTEDOUTPUT_ANALOG_OUTPUT 1
+#define __S2_Processor_Selector_SELECTEDINPUT_ANALOG_OUTPUT 0
+#define __S2_Processor_Selector_SELECTEDOUTPUT_ANALOG_OUTPUT 1
 
 
 
@@ -45,10 +45,10 @@
 /*
 * INTEGER_PARAMETER
 */
-#define __S2_Rxi_Selector_PROCESSOR01INPUT_INTEGER_PARAMETER 10
-#define __S2_Rxi_Selector_PROCESSOR02INPUT_INTEGER_PARAMETER 11
-#define __S2_Rxi_Selector_PROCESSOR01OUTPUT_INTEGER_PARAMETER 12
-#define __S2_Rxi_Selector_PROCESSOR02OUTPUT_INTEGER_PARAMETER 13
+#define __S2_Processor_Selector_PROCESSOR01INPUT_INTEGER_PARAMETER 10
+#define __S2_Processor_Selector_PROCESSOR02INPUT_INTEGER_PARAMETER 11
+#define __S2_Processor_Selector_PROCESSOR01OUTPUT_INTEGER_PARAMETER 12
+#define __S2_Processor_Selector_PROCESSOR02OUTPUT_INTEGER_PARAMETER 13
 /*
 * SIGNED_INTEGER_PARAMETER
 */
@@ -103,7 +103,7 @@
 * STRUCTURE
 */
 
-START_GLOBAL_VAR_STRUCT( S2_Rxi_Selector )
+START_GLOBAL_VAR_STRUCT( S2_Processor_Selector )
 {
    void* InstancePtr;
    struct GenericOutputString_s sGenericOutStr;
@@ -111,12 +111,12 @@ START_GLOBAL_VAR_STRUCT( S2_Rxi_Selector )
 
 };
 
-START_NVRAM_VAR_STRUCT( S2_Rxi_Selector )
+START_NVRAM_VAR_STRUCT( S2_Processor_Selector )
 {
    unsigned short __PROCESSOR_01_ON;
 };
 
 
 
-#endif //__S2_RXI_SELECTOR_H__
+#endif //__S2_PROCESSOR_SELECTOR_H__
 

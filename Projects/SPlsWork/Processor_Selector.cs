@@ -9,9 +9,9 @@ using Crestron.Logos.SplusLibrary;
 using Crestron.Logos.SplusObjects;
 using Crestron.SimplSharp;
 
-namespace UserModule_RXI_SELECTOR
+namespace UserModule_PROCESSOR_SELECTOR
 {
-    public class UserModuleClass_RXI_SELECTOR : SplusObject
+    public class UserModuleClass_PROCESSOR_SELECTOR : SplusObject
     {
         static CCriticalSection g_criticalSection = new CCriticalSection();
         
@@ -133,7 +133,7 @@ public override void LogosSimplSharpInitialize()
     
 }
 
-public UserModuleClass_RXI_SELECTOR ( string InstanceName, string ReferenceID, Crestron.Logos.SplusObjects.CrestronStringEncoding nEncodingType ) : base( InstanceName, ReferenceID, nEncodingType ) {}
+public UserModuleClass_PROCESSOR_SELECTOR ( string InstanceName, string ReferenceID, Crestron.Logos.SplusObjects.CrestronStringEncoding nEncodingType ) : base( InstanceName, ReferenceID, nEncodingType ) {}
 
 
 

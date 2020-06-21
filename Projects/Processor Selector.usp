@@ -1,0 +1,45 @@
+#SYMBOL_NAME "Processor Selector"
+#CATEGORY "32" 
+
+DIGITAL_INPUT _SKIP_;
+DIGITAL_INPUT _SKIP_;
+DIGITAL_INPUT _SKIP_;
+DIGITAL_INPUT _SKIP_;
+DIGITAL_INPUT Select;
+DIGITAL_INPUT ResetProcessor;
+INTEGER_PARAMETER Processor01Input;
+INTEGER_PARAMETER Processor02Input;
+INTEGER_PARAMETER Processor01Output;
+INTEGER_PARAMETER Processor02Output;
+
+DIGITAL_OUTPUT _SKIP_;
+DIGITAL_OUTPUT _SKIP_;
+DIGITAL_OUTPUT _SKIP_;
+DIGITAL_OUTPUT _SKIP_;
+ANALOG_OUTPUT SelectedInput;
+ANALOG_OUTPUT SelectedOutput;
+
+INTEGER Processor_01_on;
+
+PUSH Select
+{
+	if(Processor_01_on = 1)
+	{
+		SelectedOutput = Processor02Output;
+		SelectedInput = Processor02Input;
+		Processor_01_on = 0;
+	}
+	else
+	{
+		SelectedOutput = Processor02Output;
+		SelectedInput = Processor02Input;
+		Processor_01_on = 1;
+	}
+}
+
+PUSH ResetProcessor
+{
+	Processor_01_on=0;
+	SelectedOutput = 0;
+	SelectedInput = 0;
+}
