@@ -19,27 +19,27 @@ DIGITAL_OUTPUT _SKIP_;
 ANALOG_OUTPUT SelectedInput;
 ANALOG_OUTPUT SelectedOutput;
 
-INTEGER Processor_01_on;
+INTEGER Switched;
 
 PUSH Select
 {
-	if(Processor_01_on = 1)
+	if(Switched = 1)
 	{
 		SelectedOutput = Processor02Output;
 		SelectedInput = Processor02Input;
-		Processor_01_on = 0;
+		Switched = 0;
 	}
 	else
 	{
 		SelectedOutput = Processor02Output;
 		SelectedInput = Processor02Input;
-		Processor_01_on = 1;
+		Switched = 1;
 	}
 }
 
 PUSH ResetProcessor
 {
-	Processor_01_on=0;
+	Switched=0;
 	SelectedOutput = 0;
 	SelectedInput = 0;
 }

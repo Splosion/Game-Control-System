@@ -24,7 +24,7 @@ namespace UserModule_PROCESSOR_SELECTOR
         UShortParameter PROCESSOR02OUTPUT;
         Crestron.Logos.SplusObjects.AnalogOutput SELECTEDINPUT;
         Crestron.Logos.SplusObjects.AnalogOutput SELECTEDOUTPUT;
-        ushort PROCESSOR_01_ON = 0;
+        ushort SWITCHED = 0;
         object SELECT_OnPush_0 ( Object __EventInfo__ )
         
             { 
@@ -34,14 +34,14 @@ namespace UserModule_PROCESSOR_SELECTOR
                 SplusExecutionContext __context__ = SplusThreadStartCode(__SignalEventArg__);
                 
                 __context__.SourceCodeLine = 26;
-                if ( Functions.TestForTrue  ( ( Functions.BoolToInt (PROCESSOR_01_ON == 1))  ) ) 
+                if ( Functions.TestForTrue  ( ( Functions.BoolToInt (SWITCHED == 1))  ) ) 
                     { 
                     __context__.SourceCodeLine = 28;
                     SELECTEDOUTPUT  .Value = (ushort) ( PROCESSOR02OUTPUT  .Value ) ; 
                     __context__.SourceCodeLine = 29;
                     SELECTEDINPUT  .Value = (ushort) ( PROCESSOR02INPUT  .Value ) ; 
                     __context__.SourceCodeLine = 30;
-                    PROCESSOR_01_ON = (ushort) ( 0 ) ; 
+                    SWITCHED = (ushort) ( 0 ) ; 
                     } 
                 
                 else 
@@ -51,7 +51,7 @@ namespace UserModule_PROCESSOR_SELECTOR
                     __context__.SourceCodeLine = 35;
                     SELECTEDINPUT  .Value = (ushort) ( PROCESSOR02INPUT  .Value ) ; 
                     __context__.SourceCodeLine = 36;
-                    PROCESSOR_01_ON = (ushort) ( 1 ) ; 
+                    SWITCHED = (ushort) ( 1 ) ; 
                     } 
                 
                 
@@ -72,7 +72,7 @@ namespace UserModule_PROCESSOR_SELECTOR
             SplusExecutionContext __context__ = SplusThreadStartCode(__SignalEventArg__);
             
             __context__.SourceCodeLine = 42;
-            PROCESSOR_01_ON = (ushort) ( 0 ) ; 
+            SWITCHED = (ushort) ( 0 ) ; 
             __context__.SourceCodeLine = 43;
             SELECTEDOUTPUT  .Value = (ushort) ( 0 ) ; 
             __context__.SourceCodeLine = 44;

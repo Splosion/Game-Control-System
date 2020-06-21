@@ -23,14 +23,14 @@ DEFINE_INDEPENDENT_EVENTHANDLER( S2_Processor_Selector, 00000 /*Select*/ )
     
     
     UpdateSourceCodeLine( INSTANCE_PTR( S2_Processor_Selector ), 26 );
-    if ( (Nvram->S2_Processor_Selector.__PROCESSOR_01_ON == 1)) 
+    if ( (Nvram->S2_Processor_Selector.__SWITCHED == 1)) 
         { 
         UpdateSourceCodeLine( INSTANCE_PTR( S2_Processor_Selector ), 28 );
         SetAnalog ( INSTANCE_PTR( S2_Processor_Selector ), __S2_Processor_Selector_SELECTEDOUTPUT_ANALOG_OUTPUT, GetIntegerParameter( INSTANCE_PTR( S2_Processor_Selector ), __S2_Processor_Selector_PROCESSOR02OUTPUT_INTEGER_PARAMETER ) ) ; 
         UpdateSourceCodeLine( INSTANCE_PTR( S2_Processor_Selector ), 29 );
         SetAnalog ( INSTANCE_PTR( S2_Processor_Selector ), __S2_Processor_Selector_SELECTEDINPUT_ANALOG_OUTPUT, GetIntegerParameter( INSTANCE_PTR( S2_Processor_Selector ), __S2_Processor_Selector_PROCESSOR02INPUT_INTEGER_PARAMETER ) ) ; 
         UpdateSourceCodeLine( INSTANCE_PTR( S2_Processor_Selector ), 30 );
-        Nvram->S2_Processor_Selector.__PROCESSOR_01_ON = 0; 
+        Nvram->S2_Processor_Selector.__SWITCHED = 0; 
         } 
     
     else 
@@ -40,7 +40,7 @@ DEFINE_INDEPENDENT_EVENTHANDLER( S2_Processor_Selector, 00000 /*Select*/ )
         UpdateSourceCodeLine( INSTANCE_PTR( S2_Processor_Selector ), 35 );
         SetAnalog ( INSTANCE_PTR( S2_Processor_Selector ), __S2_Processor_Selector_SELECTEDINPUT_ANALOG_OUTPUT, GetIntegerParameter( INSTANCE_PTR( S2_Processor_Selector ), __S2_Processor_Selector_PROCESSOR02INPUT_INTEGER_PARAMETER ) ) ; 
         UpdateSourceCodeLine( INSTANCE_PTR( S2_Processor_Selector ), 36 );
-        Nvram->S2_Processor_Selector.__PROCESSOR_01_ON = 1; 
+        Nvram->S2_Processor_Selector.__SWITCHED = 1; 
         } 
     
     
@@ -63,7 +63,7 @@ DEFINE_INDEPENDENT_EVENTHANDLER( S2_Processor_Selector, 00001 /*ResetProcessor*/
     
     
     UpdateSourceCodeLine( INSTANCE_PTR( S2_Processor_Selector ), 42 );
-    Nvram->S2_Processor_Selector.__PROCESSOR_01_ON = 0; 
+    Nvram->S2_Processor_Selector.__SWITCHED = 0; 
     UpdateSourceCodeLine( INSTANCE_PTR( S2_Processor_Selector ), 43 );
     SetAnalog ( INSTANCE_PTR( S2_Processor_Selector ), __S2_Processor_Selector_SELECTEDOUTPUT_ANALOG_OUTPUT, 0) ; 
     UpdateSourceCodeLine( INSTANCE_PTR( S2_Processor_Selector ), 44 );

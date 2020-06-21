@@ -113,7 +113,7 @@ START_GLOBAL_VAR_STRUCT( S2_Processor_Selector )
 
 START_NVRAM_VAR_STRUCT( S2_Processor_Selector )
 {
-   unsigned short __PROCESSOR_01_ON;
+   unsigned short __SWITCHED;
 };
 
 
