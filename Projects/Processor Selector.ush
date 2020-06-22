@@ -6,17 +6,14 @@
   Sgntr=UserSPlus
   RelVrs=1
   IntStrVrs=1
-  SPlusVrs=4.04.01
+  SPlusVrs=4.02.20
   CrossCplrVrs=1.2
-[END]
-[BEGIN]
-  ObjTp=Hd
 [END]
 [BEGIN]
   ObjTp=Symbol
   Exclusions=1,19,20,21,88,89,167,168,179,213,214,215,216,217,225,226,248,249,266,267,310,718,756,854,
-  Exclusions_CDS=
-  Inclusions_CDS=5,6
+  Exclusions_CDS=6
+  Inclusions_CDS=5
   Name=Processor Selector
   SmplCName=Processor Selector.usp
   Code=1
@@ -41,6 +38,10 @@
   OutputSigType3=Digital
   OutputCue4=[~UNUSED~]
   OutputSigType4=Digital
+  OutputCue5=Processor01Active
+  OutputSigType5=Digital
+  OutputCue6=Processor02Active
+  OutputSigType6=Digital
   OutputList2Cue1=SelectedInput
   OutputList2SigType1=Analog
   OutputList2Cue2=SelectedOutput
@@ -58,8 +59,8 @@
   MaxVariableInputs=6
   MinVariableInputsList2=0
   MaxVariableInputsList2=0
-  MinVariableOutputs=4
-  MaxVariableOutputs=4
+  MinVariableOutputs=6
+  MaxVariableOutputs=6
   MinVariableOutputsList2=2
   MaxVariableOutputsList2=2
   MinVariableParams=4
@@ -92,7 +93,6 @@
   SPlus2CompiledName=S2_Processor_Selector
   SymJam=NonExclusive
   FileName=Processor Selector.ush
-  SIMPLPlusModuleEncoding=0
 [END]
 [BEGIN]
   ObjTp=Dp

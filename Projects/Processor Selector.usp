@@ -16,6 +16,8 @@ DIGITAL_OUTPUT _SKIP_;
 DIGITAL_OUTPUT _SKIP_;
 DIGITAL_OUTPUT _SKIP_;
 DIGITAL_OUTPUT _SKIP_;
+DIGITAL_OUTPUT Processor01Active;
+DIGITAL_OUTPUT Processor02Active;
 ANALOG_OUTPUT SelectedInput;
 ANALOG_OUTPUT SelectedOutput;
 
@@ -27,12 +29,16 @@ PUSH Select
 	{
 		SelectedOutput = Processor02Output;
 		SelectedInput = Processor02Input;
+		Processor02Active = 1;
+		Processor01Active = 0;
 		Switched = 0;
 	}
 	else
 	{
-		SelectedOutput = Processor02Output;
-		SelectedInput = Processor02Input;
+		SelectedOutput = Processor01Output;
+		SelectedInput = Processor01Input;
+		Processor02Active = 0;
+		Processor01Active = 1;
 		Switched = 1;
 	}
 }
@@ -42,4 +48,6 @@ PUSH ResetProcessor
 	Switched=0;
 	SelectedOutput = 0;
 	SelectedInput = 0;
+	Processor02Active = 0;
+	Processor01Active = 0;
 }

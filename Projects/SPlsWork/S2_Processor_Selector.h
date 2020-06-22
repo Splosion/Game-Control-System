@@ -25,6 +25,8 @@
 /*
 * DIGITAL_OUTPUT
 */
+#define __S2_Processor_Selector_PROCESSOR01ACTIVE_DIG_OUTPUT 0
+#define __S2_Processor_Selector_PROCESSOR02ACTIVE_DIG_OUTPUT 1
 
 
 /*

@@ -22,6 +22,8 @@ namespace UserModule_PROCESSOR_SELECTOR
         UShortParameter PROCESSOR02INPUT;
         UShortParameter PROCESSOR01OUTPUT;
         UShortParameter PROCESSOR02OUTPUT;
+        Crestron.Logos.SplusObjects.DigitalOutput PROCESSOR01ACTIVE;
+        Crestron.Logos.SplusObjects.DigitalOutput PROCESSOR02ACTIVE;
         Crestron.Logos.SplusObjects.AnalogOutput SELECTEDINPUT;
         Crestron.Logos.SplusObjects.AnalogOutput SELECTEDOUTPUT;
         ushort SWITCHED = 0;
@@ -33,24 +35,32 @@ namespace UserModule_PROCESSOR_SELECTOR
             {
                 SplusExecutionContext __context__ = SplusThreadStartCode(__SignalEventArg__);
                 
-                __context__.SourceCodeLine = 26;
+                __context__.SourceCodeLine = 28;
                 if ( Functions.TestForTrue  ( ( Functions.BoolToInt (SWITCHED == 1))  ) ) 
                     { 
-                    __context__.SourceCodeLine = 28;
-                    SELECTEDOUTPUT  .Value = (ushort) ( PROCESSOR02OUTPUT  .Value ) ; 
-                    __context__.SourceCodeLine = 29;
-                    SELECTEDINPUT  .Value = (ushort) ( PROCESSOR02INPUT  .Value ) ; 
                     __context__.SourceCodeLine = 30;
+                    SELECTEDOUTPUT  .Value = (ushort) ( PROCESSOR02OUTPUT  .Value ) ; 
+                    __context__.SourceCodeLine = 31;
+                    SELECTEDINPUT  .Value = (ushort) ( PROCESSOR02INPUT  .Value ) ; 
+                    __context__.SourceCodeLine = 32;
+                    PROCESSOR02ACTIVE  .Value = (ushort) ( 1 ) ; 
+                    __context__.SourceCodeLine = 33;
+                    PROCESSOR01ACTIVE  .Value = (ushort) ( 0 ) ; 
+                    __context__.SourceCodeLine = 34;
                     SWITCHED = (ushort) ( 0 ) ; 
                     } 
                 
                 else 
                     { 
-                    __context__.SourceCodeLine = 34;
-                    SELECTEDOUTPUT  .Value = (ushort) ( PROCESSOR02OUTPUT  .Value ) ; 
-                    __context__.SourceCodeLine = 35;
-                    SELECTEDINPUT  .Value = (ushort) ( PROCESSOR02INPUT  .Value ) ; 
-                    __context__.SourceCodeLine = 36;
+                    __context__.SourceCodeLine = 38;
+                    SELECTEDOUTPUT  .Value = (ushort) ( PROCESSOR01OUTPUT  .Value ) ; 
+                    __context__.SourceCodeLine = 39;
+                    SELECTEDINPUT  .Value = (ushort) ( PROCESSOR01INPUT  .Value ) ; 
+                    __context__.SourceCodeLine = 40;
+                    PROCESSOR02ACTIVE  .Value = (ushort) ( 0 ) ; 
+                    __context__.SourceCodeLine = 41;
+                    PROCESSOR01ACTIVE  .Value = (ushort) ( 1 ) ; 
+                    __context__.SourceCodeLine = 42;
                     SWITCHED = (ushort) ( 1 ) ; 
                     } 
                 
@@ -71,12 +81,16 @@ namespace UserModule_PROCESSOR_SELECTOR
         {
             SplusExecutionContext __context__ = SplusThreadStartCode(__SignalEventArg__);
             
-            __context__.SourceCodeLine = 42;
+            __context__.SourceCodeLine = 48;
             SWITCHED = (ushort) ( 0 ) ; 
-            __context__.SourceCodeLine = 43;
+            __context__.SourceCodeLine = 49;
             SELECTEDOUTPUT  .Value = (ushort) ( 0 ) ; 
-            __context__.SourceCodeLine = 44;
+            __context__.SourceCodeLine = 50;
             SELECTEDINPUT  .Value = (ushort) ( 0 ) ; 
+            __context__.SourceCodeLine = 51;
+            PROCESSOR02ACTIVE  .Value = (ushort) ( 0 ) ; 
+            __context__.SourceCodeLine = 52;
+            PROCESSOR01ACTIVE  .Value = (ushort) ( 0 ) ; 
             
             
         }
@@ -98,6 +112,12 @@ public override void LogosSplusInitialize()
     
     RESETPROCESSOR = new Crestron.Logos.SplusObjects.DigitalInput( RESETPROCESSOR__DigitalInput__, this );
     m_DigitalInputList.Add( RESETPROCESSOR__DigitalInput__, RESETPROCESSOR );
+    
+    PROCESSOR01ACTIVE = new Crestron.Logos.SplusObjects.DigitalOutput( PROCESSOR01ACTIVE__DigitalOutput__, this );
+    m_DigitalOutputList.Add( PROCESSOR01ACTIVE__DigitalOutput__, PROCESSOR01ACTIVE );
+    
+    PROCESSOR02ACTIVE = new Crestron.Logos.SplusObjects.DigitalOutput( PROCESSOR02ACTIVE__DigitalOutput__, this );
+    m_DigitalOutputList.Add( PROCESSOR02ACTIVE__DigitalOutput__, PROCESSOR02ACTIVE );
     
     SELECTEDINPUT = new Crestron.Logos.SplusObjects.AnalogOutput( SELECTEDINPUT__AnalogSerialOutput__, this );
     m_AnalogOutputList.Add( SELECTEDINPUT__AnalogSerialOutput__, SELECTEDINPUT );
@@ -144,6 +164,8 @@ const uint PROCESSOR01INPUT__Parameter__ = 10;
 const uint PROCESSOR02INPUT__Parameter__ = 11;
 const uint PROCESSOR01OUTPUT__Parameter__ = 12;
 const uint PROCESSOR02OUTPUT__Parameter__ = 13;
+const uint PROCESSOR01ACTIVE__DigitalOutput__ = 0;
+const uint PROCESSOR02ACTIVE__DigitalOutput__ = 1;
 const uint SELECTEDINPUT__AnalogSerialOutput__ = 0;
 const uint SELECTEDOUTPUT__AnalogSerialOutput__ = 1;
 
