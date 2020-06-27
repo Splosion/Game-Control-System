@@ -24,6 +24,8 @@
   InputSigType2=Digital
   OutputCue1=[~UNUSED~]
   OutputSigType1=Digital
+  OutputCue2=Sent
+  OutputSigType2=Digital
   InputList2Cue1=Source
   InputList2SigType1=Analog
   InputList2Cue2=Dest
@@ -37,8 +39,8 @@
   MaxVariableInputs=2
   MinVariableInputsList2=2
   MaxVariableInputsList2=2
-  MinVariableOutputs=1
-  MaxVariableOutputs=1
+  MinVariableOutputs=2
+  MaxVariableOutputs=2
   MinVariableOutputsList2=1
   MaxVariableOutputsList2=1
   MinVariableParams=1

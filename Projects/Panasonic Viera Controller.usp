@@ -2,23 +2,39 @@
 #ENABLE_STACK_CHECKING
 #ENABLE_TRACE
 
-#DEFINE_CONSTANT PORT 55000
-#DEFINE_CONSTANT IP "192.168.1.19"
+
+STRING_PARAMETER IP[20];
+INTEGER_PARAMETER PORT;
+DIGITAL_INPUT _SKIP_;
+DIGITAL_INPUT _SKIP_;
 
 STRING_INPUT Command[1024];
 DIGITAL_INPUT Send;
+DIGITAL_OUTPUT _SKIP_;
+DIGITAL_OUTPUT _SKIP_;
+
+STRING_OUTPUT Response;
 
 TCP_CLIENT
 	tcpSocket[2000];
 
 PUSH Send
 {
+Print("Connecting");
 socketConnectClient(tcpSocket, IP, Port, 0);
 }
 
 SOCKETCONNECT tcpSocket
 {
+Print("Connected, Sending");
 socketSend(tcpSocket, Command);
 
 }
 
+SocketReceive tcpSocket
+{
+Print("Receiving");
+Response = tcpSocket.SocketRxBuf;
+Response = tcpSocket.SocketRxBuf;
+
+}

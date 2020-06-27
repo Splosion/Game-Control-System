@@ -21,6 +21,7 @@ namespace UserModule_EXTRON_SWITCHING_IO_REVISED
         Crestron.Logos.SplusObjects.AnalogInput SOURCE;
         Crestron.Logos.SplusObjects.AnalogInput DEST;
         Crestron.Logos.SplusObjects.StringOutput EXTRON_TX;
+        Crestron.Logos.SplusObjects.DigitalOutput SENT;
         ushort IN = 0;
         ushort PREV_IN = 0;
         ushort OUT = 0;
@@ -33,14 +34,18 @@ namespace UserModule_EXTRON_SWITCHING_IO_REVISED
             {
                 SplusExecutionContext __context__ = SplusThreadStartCode(__SignalEventArg__);
                 
-                __context__.SourceCodeLine = 20;
-                IN = (ushort) ( SOURCE  .UshortValue ) ; 
                 __context__.SourceCodeLine = 21;
+                IN = (ushort) ( SOURCE  .UshortValue ) ; 
+                __context__.SourceCodeLine = 22;
                 if ( Functions.TestForTrue  ( ( Functions.BoolToInt ( (Functions.TestForTrue ( Functions.BoolToInt ( (Functions.TestForTrue ( Functions.BoolToInt ( (Functions.TestForTrue ( ENABLE  .Value ) && Functions.TestForTrue ( Functions.BoolToInt ( OUT > 0 ) )) ) ) && Functions.TestForTrue ( Functions.BoolToInt ( OUT <= 32 ) )) ) ) && Functions.TestForTrue ( Functions.BoolToInt ( IN <= 32 ) )) ))  ) ) 
                     { 
-                    __context__.SourceCodeLine = 23;
-                    EXTRON_TX  .UpdateValue ( Functions.ItoA (  (int) ( IN ) ) + "*" + Functions.ItoA (  (int) ( OUT ) ) + TYPE  ) ; 
                     __context__.SourceCodeLine = 24;
+                    EXTRON_TX  .UpdateValue ( Functions.ItoA (  (int) ( IN ) ) + "*" + Functions.ItoA (  (int) ( OUT ) ) + TYPE  ) ; 
+                    __context__.SourceCodeLine = 25;
+                    SENT  .Value = (ushort) ( 1 ) ; 
+                    __context__.SourceCodeLine = 26;
+                    SENT  .Value = (ushort) ( 0 ) ; 
+                    __context__.SourceCodeLine = 27;
                     IN = (ushort) ( 0 ) ; 
                     } 
                 
@@ -61,16 +66,16 @@ namespace UserModule_EXTRON_SWITCHING_IO_REVISED
         {
             SplusExecutionContext __context__ = SplusThreadStartCode(__SignalEventArg__);
             
-            __context__.SourceCodeLine = 29;
+            __context__.SourceCodeLine = 32;
             OUT = (ushort) ( DEST  .UshortValue ) ; 
-            __context__.SourceCodeLine = 30;
+            __context__.SourceCodeLine = 33;
             if ( Functions.TestForTrue  ( ( Functions.BoolToInt ( (Functions.TestForTrue ( Functions.BoolToInt ( (Functions.TestForTrue ( Functions.BoolToInt ( (Functions.TestForTrue ( Functions.BoolToInt ( (Functions.TestForTrue ( ENABLE  .Value ) && Functions.TestForTrue ( Functions.BoolToInt ( IN > 0 ) )) ) ) && Functions.TestForTrue ( Functions.BoolToInt (OUT != PREV_OUT) )) ) ) && Functions.TestForTrue ( Functions.BoolToInt ( OUT <= 32 ) )) ) ) && Functions.TestForTrue ( Functions.BoolToInt ( IN <= 32 ) )) ))  ) ) 
                 { 
-                __context__.SourceCodeLine = 32;
+                __context__.SourceCodeLine = 35;
                 EXTRON_TX  .UpdateValue ( Functions.ItoA (  (int) ( IN ) ) + "*" + Functions.ItoA (  (int) ( OUT ) ) + TYPE  ) ; 
-                __context__.SourceCodeLine = 33;
+                __context__.SourceCodeLine = 36;
                 PREV_OUT = (ushort) ( OUT ) ; 
-                __context__.SourceCodeLine = 34;
+                __context__.SourceCodeLine = 37;
                 OUT = (ushort) ( 0 ) ; 
                 } 
             
@@ -92,6 +97,9 @@ public override void LogosSplusInitialize()
     
     ENABLE = new Crestron.Logos.SplusObjects.DigitalInput( ENABLE__DigitalInput__, this );
     m_DigitalInputList.Add( ENABLE__DigitalInput__, ENABLE );
+    
+    SENT = new Crestron.Logos.SplusObjects.DigitalOutput( SENT__DigitalOutput__, this );
+    m_DigitalOutputList.Add( SENT__DigitalOutput__, SENT );
     
     SOURCE = new Crestron.Logos.SplusObjects.AnalogInput( SOURCE__AnalogSerialInput__, this );
     m_AnalogInputList.Add( SOURCE__AnalogSerialInput__, SOURCE );
@@ -131,6 +139,7 @@ const uint ENABLE__DigitalInput__ = 0;
 const uint SOURCE__AnalogSerialInput__ = 0;
 const uint DEST__AnalogSerialInput__ = 1;
 const uint EXTRON_TX__AnalogSerialOutput__ = 0;
+const uint SENT__DigitalOutput__ = 0;
 
 [SplusStructAttribute(-1, true, false)]
 public class SplusNVRAM : SplusStructureBase

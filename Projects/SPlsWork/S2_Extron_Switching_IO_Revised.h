@@ -26,6 +26,7 @@
 /*
 * DIGITAL_OUTPUT
 */
+#define __S2_Extron_Switching_IO_Revised_SENT_DIG_OUTPUT 0
 
 
 /*

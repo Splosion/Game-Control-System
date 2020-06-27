@@ -8,6 +8,7 @@ DIGITAL_INPUT Enable;
 ANALOG_INPUT Source;
 ANALOG_INPUT Dest;
 STRING_OUTPUT Extron_TX;
+DIGITAL_OUTPUT Sent;
 
 INTEGER in;
 INTEGER prev_in;
@@ -21,6 +22,8 @@ in = Source;
 If(Enable && out > 0 && out <= 32 && in <=32)
 {
 Extron_TX = ItoA(in) + "*" + ItoA(out) + type;
+Sent=1;
+Sent=0;
 in=0;
 }
 }

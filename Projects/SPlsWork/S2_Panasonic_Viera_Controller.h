@@ -33,6 +33,7 @@ CREATE_STRING_STRUCT( S2_Panasonic_Viera_Controller, __COMMAND, __S2_Panasonic_V
 * ANALOG_OUTPUT
 */
 
+#define __S2_Panasonic_Viera_Controller_RESPONSE_STRING_OUTPUT 0
 
 
 /*
@@ -55,6 +56,7 @@ CREATE_SOCKET_STRING( S2_Panasonic_Viera_Controller, SocketRxBuf, __S2_Panasonic
 /*
 * INTEGER_PARAMETER
 */
+#define __S2_Panasonic_Viera_Controller_PORT_INTEGER_PARAMETER 11
 /*
 * SIGNED_INTEGER_PARAMETER
 */
@@ -79,6 +81,9 @@ CREATE_SOCKET_STRING( S2_Panasonic_Viera_Controller, SocketRxBuf, __S2_Panasonic
 /*
 * STRING_PARAMETER
 */
+#define __S2_Panasonic_Viera_Controller_IP_STRING_PARAMETER 10
+#define __S2_Panasonic_Viera_Controller_IP_PARAM_MAX_LEN 20
+CREATE_STRING_STRUCT( S2_Panasonic_Viera_Controller, __IP, __S2_Panasonic_Viera_Controller_IP_PARAM_MAX_LEN );
 
 
 /*
@@ -117,6 +122,7 @@ START_GLOBAL_VAR_STRUCT( S2_Panasonic_Viera_Controller )
 
    DECLARE_STRING_STRUCT( S2_Panasonic_Viera_Controller, __COMMAND );
    DECLARE_SOCKET( S2_Panasonic_Viera_Controller, __TCPSOCKET );
+   DECLARE_STRING_STRUCT( S2_Panasonic_Viera_Controller, __IP );
 };
 
 START_NVRAM_VAR_STRUCT( S2_Panasonic_Viera_Controller )

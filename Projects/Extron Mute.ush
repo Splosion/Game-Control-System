@@ -18,6 +18,7 @@
   SmplCName=Extron Mute.usp
   Code=1
   SysRev5=4.000
+  SMWRev=2.02.05
   InputCue1=Enable
   InputSigType1=Digital
   InputCue2=isVideo
